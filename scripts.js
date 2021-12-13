@@ -27,6 +27,26 @@ const titlesArr = [
    'Heroes'
 ]
 
+const romhacksArr = [
+"The Last Promise",
+"Four Kings",
+"Vision Quest",
+"Dark Lord and the Maiden of Light"
+]
+
+const filtersArr = [
+"Male Only",
+"Female Only",
+"Lords",
+"Refreshers",
+"Shapeshifters",
+"Myrmidons",
+"Archers",
+"Healers",
+"Pegaus Knights",
+"Wyvern Riders"
+]
+
 const columns = 2;
 
 function toggleColl(id){
@@ -99,15 +119,15 @@ function startup() {
    this.generateCheckboxes();
 }
 
-function selectAll() {
+function selectAllMainline() {
    for (let i = 0; i < titlesArr.length; i++) {
       document.getElementById('option' + i).checked = document.getElementById('optSelect_all').checked;
    }
 }
 
-function check(int_id) {
-   let checkbox = document.getElementById('option' + int_id);
-   if (!checkbox.disabled) {
-      checkbox.checked = (checkbox.checked) ? false :true;
+function selectAllRomhack() {
+   for (let i = 0; i < romhacksArr.length; i++) {
+      document.getElementById('romhack' + i).checked = document.getElementById('romhackSelect_all').checked;
    }
 }
+
