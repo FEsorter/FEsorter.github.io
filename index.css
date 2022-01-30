@@ -1,7 +1,14 @@
+@font-face {
+   font-family: 'FEH';
+   src: url(./feh.ttf) format("truetype");
+   
+}
+
+
 
 #mainTable {
    font-size: 14px;
-   font-family: 'Arial', sans-serif;
+   font-family: 'FEH';
    text-align: center;
    vertical-align: middle;
    width: 410px;
@@ -14,7 +21,7 @@
 
 .tb_header {
     padding-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FEH;
 }
 
 .collapsible {
@@ -35,10 +42,17 @@
 
 .content {
   padding: 0 18px;
-  background-color: white;
+  background-color: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+
+  font-family: FEH;
+
+}
+
+#header {
+	text-align: center
 }
 
 .collapsible:after {
@@ -60,7 +74,8 @@
 	border: 1px solid #000;
 	cursor:pointer;
     padding:10px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 #fldRight   {
     height: 180px;
@@ -69,7 +84,8 @@
 	min-width: 120px;
 	border: 1px solid #000;
 	cursor:pointer;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 #fldMiddleT {
 	text-align: center;
@@ -77,7 +93,8 @@
 	height: 90px;
 	border: 1px solid #000;
 	cursor:pointer;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 #fldMiddleB {
 	text-align: center;
@@ -86,14 +103,34 @@
 	padding:0px;
 	border: 1px solid #000;
 	cursor:pointer;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 
 .cbox {
 	cursor:pointer;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 9px;
+	font-family: FEH;
+	color: white;
+	font-size: 10px;
 }
+
+#optSelect_all span{
+	font-family: FEH;
+	color: white;
+	
+}
+
+#romhack{
+	font-size: 14px;
+}
+
+#romhackSelect_all {
+	margin-left: 130px;
+}
+
+
+
+
 
 #resTable {
 	width:200px;
@@ -105,42 +142,49 @@
 	border:1px solid #000;
 	border-collapse:collapse;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-family: FEH;
 }
 
 .resTableH {
 	color:#ffffff;
 	background-color:#000000;
 	text-align:center;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 .resTableL {
 	color:#000000;
 	border:1px solid #000000;
 	text-align:right;
 	padding-right:5px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 .resTableR {
 	color:#000000;
 	border:1px solid #000000;
 	padding-left:5px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 
 a       {
 	text-decoration:none;
     font-size:15px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 a:hover {
 	color:#99ccff;
     font-size:15px;
-	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	font-family: FEH;
 }
 
 .style4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FEH;
+    color: white;
 	color: #000000;
 	font-weight: normal;
     font-size:15px;
@@ -149,31 +193,38 @@ a:link {
 	color: #990000;
     font-size:15px;
 	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 	font-size:15px;
 }
 a {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
 	;font-size:15px;
+	color: white;
 }
 a:visited {
 	text-decoration: none;
 	color: #6600FF;font-size:15px;
 	font-size: 11px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
 }
 a:hover {
 	text-decoration: none;
 	color: #FF6600;
 	font-size:15px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 a:active {
 	text-decoration: none;
 	font-size:15px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: FEH;
+	color: white;
 }
 body {
-background-color:#ffffff;}
+	background-image: url("background.png");
+	background-size: auto;
+	color: white;
+}
 
 figure{margin:0}

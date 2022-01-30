@@ -28,10 +28,12 @@ const titlesArr = [
 ]
 
 const romhacksArr = [
-"The Last Promise",
-"Four Kings",
-"Vision Quest",
-"Dark Lord and the Maiden of Light"
+   "The Last Promise",
+   "Four Kings",
+   "Vision Quest",
+   "The Last Promise Extra",
+   "Four Kings Extra",
+   "Vision Quest Extra"
 ]
 
 const filtersArr = [
@@ -39,17 +41,48 @@ const filtersArr = [
 "Female Only",
 "Lords",
 "Refreshers",
-"Shapeshifters",
 "Myrmidons",
+"Pegasus Knights",
 "Archers",
 "Healers",
-"Pegaus Knights",
-"Wyvern Riders"
+"Wyvern Riders",
+"Shapeshifters"
 ]
 
-const columns = 2;
+const doublesKeep = [
+'palla_sov',
+'catria_sov',
+'est_sov',
+'karel_fe6',
+'bartre_fe6',
+'marcus_fe6',
+'eliwood_fe7',
+'hector_fe7',
+'murdock_fe6',
+'guinivere_fe6',
+'zephiel_fe6',
+"merlinus_fe6",
+]
 
-function toggleColl(id){
+const doublesRemove = [
+'palla_fe1',
+'catria_fe1',
+'est_fe1',
+'karel_fe7',
+'bartre_fe7',
+'marcus_fe7',
+'eliwood_fe6',
+'hector_fe6',
+'murdock_fe7',
+'guinivere_fe7',
+'zephiel_fe7',
+"merlinus_fe7",
+]
+
+let charlist = []
+
+
+function toggleCollapsible(id){
    let el = document.getElementById(id);
       el.classList.toggle("active");
    var content = el.nextElementSibling;
@@ -61,62 +94,24 @@ function toggleColl(id){
     }
 }
 
-function generateCheckboxes() {
 
-   let titlesTable = document.getElementById('titlesTable');
-   let titlesBody = document.createElement('tbody');
-   let row;
-   titlesTable.appendChild(titlesBody);
 
-   for (let i = 0; i < titlesArr.length; i++){
-      if ((i % columns) == 0){
-         row = titlesBody.insertRow(titlesBody.rows.length);
-         row.id = 'optionsRow' + i;
-      }
-      let cell = row.insertCell(row.childNodes.length)
-      let checkbox = document.createElement('input');
-      checkbox.setAttribute('type', 'checkbox', 0);
-      checkbox.setAttribute('checked', 'true', 0);
-      checkbox.value = titlesArr[i]
-      checkbox.title = titlesArr[i]
-      checkbox.id = 'option' + i;
-      cell.appendChild(checkbox);
-      let span = document.createElement('span');
-      span.appendChild(document.createTextNode(titlesArr[i]))
-      span.title = titlesArr[i]
-      span.id = 'span'+i;
-      span.setAttribute('class', 'cbox', 0);
-      span.className = 'cbox';
-      span.onclick = function() {check(this.id);}
-      cell.appendChild(span);
+function uncheckFilters(){
+   for (let i = 0; i < filtersArr.length; i++){
+      let cbox = document.getElementById('filter'+i);
+      cbox.checked = false;
    }
 
-   let titlesFooter = document.createElement('tfoot');
-   titlesTable.appendChild(titlesFooter);
-   row = titlesFooter.insertRow(titlesFooter.rows.length);
-   row.setAttribute('class', 'opt_foot', 0);
-   row.className = 'opt_foot';
-
-   let cell = row.insertCell(row.childNodes.length);
-
-   cell.setAttribute('colspan', columns, 0);
-   let checkbox = document.createElement('input');
-   checkbox.setAttribute('type', 'checkbox', 0);
-   checkbox.setAttribute('checked', 'true', 0);
-   checkbox.value = "All";
-   checkbox.title = "All boxes are checked/unchecked at the same time.";
-   checkbox.id = 'optSelect_all';
-   checkbox.onclick = function() {selectAll();}
-   cell.appendChild(checkbox);
-
-   var span = document.createElement('span');
-   span.appendChild(document.createTextNode("Select All"));
-   cell.appendChild(span);    
+   let cbox = document.getElementById('3hportrait2')
+   cbox.checked = false;
+   cbox = document.getElementById('tellius1')
+   cbox.checked = false;
 }
 
 
 function startup() {
-   this.generateCheckboxes();
+   this.uncheckFilters()
+   this.selectAllRomhack()
 }
 
 function selectAllMainline() {
@@ -129,5 +124,61 @@ function selectAllRomhack() {
    for (let i = 0; i < romhacksArr.length; i++) {
       document.getElementById('romhack' + i).checked = document.getElementById('romhackSelect_all').checked;
    }
+}
+
+function portraitChoice(id1, id2) {
+   let cbox1 = document.getElementById(id1)
+   let cbox2 = document.getElementById(id2)
+   cbox2.checked = !cbox1.checked;
+}
+
+
+async function initialize(){
+   charlist = [];
+   for(let i = 0; i < titlesArr.length; i++){
+      if(document.getElementById(`option${i}`).checked){
+         charlist = charlist.concat(filter[titlesArr[i]])
+      }
+   }
+
+   for(let i = 0; i < romhacksArr.length; i++){
+         if(document.getElementById(`romhack${i}`).checked){
+         charlist = charlist.concat(filter[romhacksArr[i]])
+      }
+   }
+
+   this.applyFilters()
+}
+
+function removeDoubles(keep, remove){
+   if (charlist.includes(keep) && charlist.includes(remove)){
+      charlist.splice(charlist.indexOf(remove), 1)
+   }
+}
+
+function portraitFilter(suffix){
+   for (let i = 0; i < charlist.length; i++){
+      if(charlist[i].includes(suffix)){
+         charlist.splice(i, 1);
+         i--;
+      }
+   }
+}
+
+function applyFilters(){
+   for (let i = 0; i < doublesRemove.length; i++){
+      this.removeDoubles(doublesKeep[i], doublesRemove[i])
+   }
+
+   document.getElementById('3hportrait1').checked ? this.portraitFilter('_war') : this.portraitFilter('_academy')
+   document.getElementById('tellius1').checked ? this.portraitFilter('_rd') : this.portraitFilter('_por')
+
+   for (let i = 0; i < filtersArr.length; i++){
+      if(document.getElementById(`filter${i}`).checked)
+      charlist = filter[filtersArr[i]].filter(element => charlist.includes(element));
+   }
+
+   console.log(charlist)
+
 }
 
