@@ -116,6 +116,7 @@ function uncheckFilters(){
 function startup() {
    this.uncheckFilters()
    document.getElementById('romhackSelect_all').checked = false;
+   //document.getElementById('topTen').style.display = 'none';
    this.selectAllRomhack()
 }
 
@@ -140,10 +141,9 @@ function portraitChoice(id1, id2) {
 function hideAll(){
 
 document.getElementById('allCheckboxes').style.display = 'none';
+document.getElementById('optImage').style.display = 'none';
+document.getElementById('tb_header').style.display = 'none';
 
-
-   
-   
 }
 
 
@@ -164,6 +164,10 @@ async function initialize(){
 
    this.applyFilters()
    this.start();
+
+   //document.getElementById('fldMiddleB').onclick = 'undo();'
+
+   document.getElementById('fldMiddleB').setAttribute( "onClick", "undo()" );
 }
 
 function removeDoubles(keep, remove){
@@ -234,4 +238,6 @@ function changeSong(next) {
    document.getElementById("toggle").src = "buttons/play.png";
    setMusic(false);
 }
+
+
 

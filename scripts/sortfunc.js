@@ -2,6 +2,8 @@ let lstMember = []
 let parent = []
 let equal = []
 let rec = []
+
+let resultstr = "";
  
 let cmp1,cmp2;
 let head1,head2;
@@ -11,13 +13,26 @@ let numQuestion;
 let totalSize;
 let finishSize; 
 let finishFlag;
+
+let back_cmp1, back_cmp2;
+let back_head1, back_head2;
+let back_nrec;
+ 
+let back_numQuestion; 
+let back_finishSize; 
+
+let back_lstMember = []
+let back_parent = []
+let back_equal = []
+let back_rec = []
+
  
  
  
 //The initialization of the letiable+++++++++++++++++++++++++++++++++++++++++++++
  
 function start(){
-	console.log('started')
+	this.transformTable()
 	let n = 0;
 	let mid;
 	let i; 
@@ -81,6 +96,21 @@ function start(){
 // 1&#65306;Chose the right
  
 function sortList(flag){
+
+	back_last = lstMember.slice(0);
+	back_record = rec.slice(0);
+	
+	back_equal = equal.slice(0);
+	back_parent = parent.slice(0);
+	
+	back_cmp1 = cmp1;
+	back_cmp2 = cmp2;
+	back_head1 = head1;
+	back_head2 = head2;
+	back_nrec = nrec;
+	back_finishsize = finishSize
+	back_numQuestion = numQuestion
+
 	let i;
 	let str;
 	//rec preservation
@@ -183,6 +213,27 @@ function sortList(flag){
 		showImage();
 	}
 }
+
+function undo(){
+
+lstMember =		back_last.slice(0);
+  rec =	back_record.slice(0);
+	
+	equal = back_equal.slice(0);
+	parent = back_parent.slice(0);
+
+	cmp1 = back_cmp1;
+	cmp2 = back_cmp2;
+	head1 = back_head1;
+	head2 = back_head2;
+	nrec = back_nrec;
+	finishSize = back_finishsize
+	numQuestion = back_numQuestion;
+
+showImage();
+
+}
+
  
 //The results+++++++++++++++++++++++++++++++++++++++++++++++
 //&#38918;&#20301;=Rank/Grade/Position/Standing/Status
@@ -193,11 +244,12 @@ function showResult() {
 	let sameRank = 1;
 	let str = "";
 	let i;
-	str += "<table style=\"width:200px; font-size:18px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #000; border-collapse:collapse\" align=\"center\">";
-	str += "<tr><td style=\"color:#ffffff; background-color:#e097d9; text-align:center;\">rank<\/td><td style=\"color:#ffffff; background-color:#e097d9; text-align:center;\">options<\/td><\/tr>";
+	str += "<table style=\"width:200px; font-size:18px; color: white; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #FFF; border-collapse:collapse\" align=\"center\">";
+	str += "<tr><td style=\"border:1px solid #FFF; color: white; text-align:center; padding-right:5px;\">rank<\/td><td style=\"border:1px solid #FFF; padding-left:5px;\">option<\/td><\/tr>";
 
 	for (i=0; i<charlist.length; i++) {
-		str += "<tr><td style=\"border:1px solid #000; text-align:center; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #000; padding-left:5px;\">"+charlist[lstMember[0][i]]+"<\/td><\/tr>";
+		str += "<tr><td style=\"border:1px solid #FFF; color: white; text-align:center; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #FFF; padding-left:5px;\">"+all[charlist[lstMember[0][i]]]+"<\/td><\/tr>";
+		resultstr += `${ranking}: ${all[charlist[lstMember[0][i]]]}\n`
 		if (i<charlist.length-1) {
 			if (equal[lstMember[0][i]]==lstMember[0][i+1]) {
 				sameRank++;
@@ -211,6 +263,9 @@ function showResult() {
 	}	 
 	str += "<\/table>";
 	document.getElementById("resultField").innerHTML = str;
+	document.getElementById("mainTable").style.display = 'none';
+	this.draw()
+	//this.download()
 }
  
  
@@ -218,6 +273,7 @@ function showResult() {
 //Indicates two elements to compare+++++++++++++++++++++++++++++++++++
  
 function showImage() {
+
 	let index1 = lstMember[cmp1][head1]
 	let index2 = lstMember[cmp2][head2]
 	let str0 = "Battle #"+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
@@ -238,6 +294,66 @@ function showImage() {
 function toNameFace(n){
 	let displayName = all[charlist[n]];
 	return displayName; 
+}
+
+function transformTable(){
+	let middleTop = document.getElementById('fldMiddleT');
+	let middleBottom = document.getElementById('fldMiddleB')
+middleTop.innerHTML = '';
+middleTop.style.backgroundImage = "url('./buttons/tie.png')"
+middleTop.style.borderColor = 'transparent';
+middleBottom.innerHTML = '';
+middleBottom.style.backgroundImage = "url('./buttons/undo.png')"
+middleBottom.style.borderColor = 'transparent';
+
+}
+
+function download(){
+ var textDoc = document.createElement('a');
+
+ textDoc.href = 'data:attachment/text,' + encodeURI(resultstr);
+ textDoc.target = '_blank';
+ textDoc.download = 'sorterResults.txt';
+ textDoc.click();
+}
+
+async function draw(){
+	let canvas = document.getElementById('topTen');
+	let ctx = canvas.getContext('2d');
+	var bg = new Image();   
+	bg.src = 'template.png'
+
+bg.onload = async function() {
+	 ctx.drawImage(bg, 0, 0, 900, 2525);
+	 drawPortraits();
+}
+
+
+		
+}
+
+
+function drawPortraits(){
+	let canvas = document.getElementById('topTen');
+	let ctx = canvas.getContext('2d');
+	for (let i = 0; i < 10 || i < charlist.length; i++){
+		console.log(`${charlist[lstMember[0][i]]}`)
+		let portrait = new Image();
+		//portrait.setAttribute('anonymous');
+		portrait.src = `portraits/${charlist[lstMember[0][i]]}.png`
+		ctx.drawImage(portrait, 176, 150 + (i*250) -105, 200, 200);
+
+	}
+	this.downloadCanvas()
+}
+
+function downloadCanvas(){
+
+
+  	var link = document.createElement('a');
+  link.download = 'filename.png';
+  link.href = document.getElementById('topTen').toDataURL()
+  link.click();
 }
 
  

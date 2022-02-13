@@ -13,6 +13,10 @@
 	}
 }
 
+body {
+	font-family: 'FEH';
+	color:white;
+}
 
 
 #mainTable {
@@ -20,7 +24,7 @@
    font-family: 'FEH';
    text-align: center;
    vertical-align: middle;
-   width: 410px;
+   width: 430px;
    margin-left: auto;
    margin-right: auto;
    border-collapse: separate;
@@ -80,14 +84,14 @@
 #leftField    {
     height: 180px;
 	text-align: center; 
-	min-width: 120px;
+	min-width: 130px;
 	border: 1px solid #000;
 	cursor:pointer;
     padding:10px;
 	font-family: FEH;
 	border-color: white;
 	background: url(./portraits/edelgard_academy.png);
-	background-size: 130px 130px;
+	background-size: 140px 140px;
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
 	vertical-align: bottom;
@@ -98,13 +102,13 @@
     height: 180px;
 	text-align: center;
     padding:10px;
-	min-width: 120px;
+	min-width: 130px;
 	border: 1px solid #000;
 	cursor:pointer;
 	font-family: FEH;
 	border-color: white;
 	background: url(./portraits/dimitri_academy.png);
-	background-size: 130px 130px;
+	background-size: 140px 140px;
 	background-repeat: no-repeat;
 	background-position: 50% 15%;
 	vertical-align: bottom;
@@ -114,23 +118,31 @@
 #fldMiddleT {
 	text-align: center;
 	min-width: 150px;
-	height: 90px;
+	height: 70px;
 	border: 1px solid #000;
 	cursor:pointer;
 	font-family: FEH;
 	color: white;
 	border-color: white;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
 }
 #fldMiddleB {
 	text-align: center;
 	width: 150px;
-	height: 50px;
+	height: 70px;
 	padding:0px;
 	border: 1px solid #000;
 	cursor:pointer;
 	font-family: FEH;
 	color: white;
 	border-color: white;
+	margin: auto auto;
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 #audio_box img {
