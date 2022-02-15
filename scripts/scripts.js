@@ -63,6 +63,11 @@ const doublesKeep = [
 'guinivere_fe6',
 'zephiel_fe6',
 "merlinus_fe6",
+"leif_fe5",
+"nanna_fe5",
+"finn_fe5",
+"ced_fe5",
+"diarmuid_fe5"
 ]
 
 const doublesRemove = [
@@ -78,6 +83,11 @@ const doublesRemove = [
 'guinivere_fe7',
 'zephiel_fe7',
 "merlinus_fe7",
+"leif_fe4",
+"nanna_fe4",
+"finn_fe4",
+"ced_fe4",
+"diarmuid_fe4"
 ]
 
 
@@ -116,7 +126,8 @@ function uncheckFilters(){
 function startup() {
    this.uncheckFilters()
    document.getElementById('romhackSelect_all').checked = false;
-   //document.getElementById('topTen').style.display = 'none';
+   document.getElementById('topTen').style.display = 'none';
+   document.getElementById('resultcontainer').style.display = 'none';
    this.selectAllRomhack()
 }
 
@@ -124,6 +135,10 @@ function selectAllMainline() {
    for (let i = 0; i < titlesArr.length; i++) {
       document.getElementById('option' + i).checked = document.getElementById('optSelect_all').checked;
    }
+}
+
+function reloadPage(){
+   window.location.reload();
 }
 
 function selectAllRomhack() {
