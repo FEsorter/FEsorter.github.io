@@ -1085,7 +1085,7 @@ let all = {
   "onderdonk": "Onderdonk",
   "onisim": "Onisim",
   "osane": "Osane",
-  "otillie": "Otillie",
+  "otilie": "Otilie",
   "radoslav": "Radoslav",
   "rakkaus": "Rakkaus",
   "ruslan": "Ruslan",
