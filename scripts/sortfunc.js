@@ -284,7 +284,8 @@ function transformTable() {
 
 function downloadTxt() {
     var textDoc = document.createElement('a');
-    textDoc.href = 'data:attachment/text,' + encodeURI(resultstr);
+    textDoc.href = 'data:text/plain;charset=utf-16,'+ encodeURIComponent(resultstr)
+    //textDoc.href = 'data:attachment/text,' + encodeURI(resultstr);
     textDoc.target = '_blank';
     textDoc.download = 'sorterResults.txt';
     textDoc.click();
