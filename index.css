@@ -35,6 +35,7 @@ body {
     padding-left: 90px;
     line-height: 80px;
     font-size: 20px;
+    white-space: nowrap;
   
 
 }
