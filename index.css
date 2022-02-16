@@ -297,7 +297,8 @@ body {
 .marquee {
     height: 100%;
     width: 27%;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     position: absolute;
     font-family: FEH;
     font-size: 3vw;
