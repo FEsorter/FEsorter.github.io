@@ -2860,6 +2860,7 @@ let filter = {
     "thrasir",
     "eir",
     "gunnthra",
+    "kyza",
     "peony",
     "hel",
     "ylgr",
