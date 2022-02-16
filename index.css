@@ -25,15 +25,17 @@ body {
     text-align: center;
     padding-right: 5px;
     line-height: 50px;
+    font-size: 20px;
 
 }
 
 #leftCol {
     border: 1px solid #FFF;
     text-align: left;
-    padding-left: 60px;
-    line-height: 50px;
-    background-size: 25px 25px;
+    padding-left: 90px;
+    line-height: 80px;
+    font-size: 20px;
+  
 
 }
 
@@ -42,20 +44,22 @@ body {
     color: white;
     text-align: center center;
     padding-right: 5px;
-    line-height: 140%;
+    line-height: 150%;
+    font-size: 20px;
 }
 
 #leftHeader {
     border: 1px solid #FFF;
     padding-left: 5px;
-    line-height: 140%;
+    line-height: 150%;
+    font-size: 20px;
     text-align: none center;
 }
 
 
 
 #resTable {
-    width: 200px;
+    width: 300px;
     font-size: 18px;
     color: white;
     line-height: 120%;
@@ -117,21 +121,17 @@ body {
 }
 
 .collapsible {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    background-color: transparent;
+    background: url('./arrow.png') no-repeat left center;
+    background-size: 20px auto;
+    height:  30px;
+    padding-left: 35px;
     border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+    color: white;
+    font-family: 'FEH';
+    font-size: 20px;
 }
-
-.active,
-.collapsible:hover {
-    background-color: #ccc;
-}
+   
 
 .content {
     padding: 0 18px;
@@ -148,53 +148,64 @@ body {
     text-align: center
 }
 
-.collapsible:after {
-    content: '\02795';
+.collapsible :after {
+   transition: all 0.5s;
+   
     /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
+    
 }
 
 .active:after {
-    content: "\2796";
+   background-image: url('./arrowdown.png')no-repeat left center;
+   background-size: auto 20px; 
+   
     /* Unicode character for "minus" sign (-) */
 }
 
+.active {
+   background-image: url('./arrowdown.png');
+   background-size: auto 20px; 
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+
 #leftField {
-    height: 180px;
+    height: 200px;
     text-align: center;
-    min-width: 130px;
-    border: 1px solid #000;
+    min-width: 150px;
+    border: none;
     cursor: pointer;
     padding: 10px;
     font-family: FEH;
     border-color: white;
-    background: url(./portraits/edelgard_academy.png);
-    background-size: 140px 140px;
-    background-repeat: no-repeat;
-    background-position: 50% 15%;
+    background: url('./portraits/edelgard_academy.png'), url('./frame.png');
+    background-size: 130px 130px, 180px 240px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 47% 15%, 50% 50%;
     vertical-align: bottom;
-    line-height: 50px;
+    line-height: 80px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
 #rightField {
-    height: 180px;
+    height: 200px;
     text-align: center;
+    min-width: 150px;
     padding: 10px;
-    min-width: 130px;
-    border: 1px solid #000;
+    border: none;
     cursor: pointer;
+    border: white;
     font-family: FEH;
     border-color: white;
-    background: url(./portraits/dimitri_academy.png);
-    background-size: 140px 140px;
-    background-repeat: no-repeat;
-    background-position: 50% 15%;
+    background: url('./portraits/dimitri_academy.png'), url('./frame.png');
+    background-size: 130px 130px, 180px 240px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 47% 15%, 50% 50%;
     vertical-align: bottom;
-    line-height: 50px;
+    line-height: 80px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
@@ -202,14 +213,15 @@ body {
     text-align: center;
     min-width: 150px;
     height: 70px;
-    border: 1px solid #000;
+   
     cursor: pointer;
     font-family: FEH;
     color: white;
-    border-color: white;
-    background-size: 90%;
+    background: url('./smallframe.png');
+    background-size: 155px 115px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
@@ -218,15 +230,16 @@ body {
     width: 150px;
     height: 70px;
     padding: 0px;
-    border: 1px solid #000;
+    
     cursor: pointer;
     font-family: FEH;
     color: white;
-    border-color: white;
     margin: auto auto;
-    background-size: 90%;
+    background: url('./smallframe.png');
+    background-size: 155px 115px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #audio_box img {
@@ -264,7 +277,7 @@ body {
 }
 
 .marquee {
-    height: 20%;
+    height: 100%;
     width: 27%;
     overflow: scroll;
     position: absolute;
@@ -276,9 +289,12 @@ body {
     right: 27%;
     color: black;
     white-space: nowrap;
-
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    
 
 }
+.marquee::-webkit-scrollbar { width: 0 !important }
 
 .marquee p {
     width: 100%;
@@ -320,7 +336,16 @@ body {
     font-size: 14px;
 }
 
+#mainlineall {
+    font-size: 14px;
+}
+
+
 #romhackSelect_all {
+    margin-left: 130px;
+}
+
+#optSelect_all {
     margin-left: 130px;
 }
 

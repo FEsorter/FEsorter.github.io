@@ -239,7 +239,7 @@ function showResult() {
     str += "<tr><td id= \"rightHeader\"> Rank <\/td><td id= \"leftHeader\">Character<\/td><\/tr>";
 
     for (i = 0; i < charlist.length; i++) {
-        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] +".png\') 3% center/45px 45px no-repeat !important; margin-left:3px;\">" + all[charlist[lstMember[0][i]]]+ "<\/td><\/tr>";
+        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] +".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + all[charlist[lstMember[0][i]]]+ "<\/td><\/tr>";
         resultstr += `${ranking}: ${all[charlist[lstMember[0][i]]]}\n`
         if (i < charlist.length - 1) {
             if (equal[lstMember[0][i]] == lstMember[0][i + 1]) {
@@ -267,8 +267,8 @@ function showImage() {
     let str1 = "" + toNameFace(index1);
     let str2 = "" + toNameFace(index2);
     document.getElementById("lblProgress").innerHTML = str0;
-    document.getElementById("leftField").style.backgroundImage = `url('./portraits/${charlist[index1]}.png')`;
-    document.getElementById("rightField").style.backgroundImage = `url('./portraits/${charlist[index2]}.png')`;
+    document.getElementById("leftField").style.backgroundImage = `url('./portraits/${charlist[index1]}.png'), url('./frame.png')`;
+    document.getElementById("rightField").style.backgroundImage = `url('./portraits/${charlist[index2]}.png'), url('./frame.png')`;
     document.getElementById("leftField").innerHTML = str1;
     document.getElementById("rightField").innerHTML = str2;
     numQuestion++;
@@ -289,9 +289,11 @@ function transformTable() {
     middleTop.innerHTML = '';
     middleTop.style.backgroundImage = "url('./buttons/tie.png')"
     middleTop.style.borderColor = 'transparent';
+    middleTop.style.backgroundSize = '90%'
     middleBottom.innerHTML = '';
     middleBottom.style.backgroundImage = "url('./buttons/undo.png')"
     middleBottom.style.borderColor = 'transparent';
+    middleBottom.style.backgroundSize = '90%'
 
 }
 

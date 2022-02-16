@@ -156,8 +156,6 @@ function portraitChoice(id1, id2) {
 function hideAll(){
 
 document.getElementById('allCheckboxes').style.display = 'none';
-document.getElementById('optImage').style.display = 'none';
-document.getElementById('tb_header').style.display = 'none';
 
 }
 
@@ -233,7 +231,7 @@ function toggle(){
 
 function setMusic(load){
    if(load){
-      music_index = Math.floor(Math.random()*4)+1;
+      music_index = Math.floor(Math.random()*9)+1;
    } 
    let track = music[music_index];
    document.getElementById("cover").src = "covers/" + track.cover;
@@ -244,10 +242,10 @@ function setMusic(load){
 
 function changeSong(next) {
    if(next){
-      music_index == 4 ? music_index = 1 : music_index++;
+      music_index == 9 ? music_index = 1 : music_index++;
    }
    else {
-      music_index == 1 ? music_index = 4 : music_index--;
+      music_index == 1 ? music_index = 9 : music_index--;
    }
    document.getElementById("bg_music").pause()
    document.getElementById("toggle").src = "buttons/play.png";
