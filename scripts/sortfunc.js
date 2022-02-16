@@ -228,7 +228,7 @@ function showResult() {
     str += "<tr><td id= \"rightHeader\"> Rank <\/td><td id= \"leftHeader\">Character<\/td><\/tr>";
 
     for (i = 0; i < charlist.length; i++) {
-        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] +".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + all[charlist[lstMember[0][i]]]+ "<\/td><\/tr>";
+        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] + ".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + all[charlist[lstMember[0][i]]] + "<\/td><\/tr>";
         resultstr += `${ranking}: ${all[charlist[lstMember[0][i]]]}\n`
         if (i < charlist.length - 1) {
             if (equal[lstMember[0][i]] == lstMember[0][i + 1]) {
@@ -314,13 +314,12 @@ async function drawPortraits() {
     ctx.font = '85px FEH';
     ctx.fillStyle = "#ffffff";
     let keys = await Object.keys(filter)
-    for (let i = 0;
-        (i < 10); i++) {
+    for (let i = 0;(i < 10); i++) {
         if (i >= charlist.length) {
             break;
         }
-        let fontsize = 90;
-        ctx.font = '80px FEH';
+        
+        
         let porkey = charlist[lstMember[0][i]]
         console.log(porkey)
         let title = "";
@@ -338,18 +337,23 @@ async function drawPortraits() {
 
         let portrait = new Image();
         portrait.src = `portraits/${porkey}.png`
-        await ctx.drawImage(portrait, 176, 150 + (i * 250) - 100, 200, 200);
-        let name = all[charlist[lstMember[0][i]]]
-        if(name.includes('(')){
-            name = name.substring(0, name.indexOf('(')-1)
+        portrait.onload = async function() {
+            ctx.drawImage(portrait, 176, 150 + (i * 250) - 100, 200, 200);
+            ctx.font = '80px FEH';
+            let fontsize = 80;
+            let name = all[charlist[lstMember[0][i]]]
+            if (name.includes('(')) {
+                name = name.substring(0, name.indexOf('(') - 1)
+            }
+            while (ctx.measureText(name).width > 500) {
+                fontsize = fontsize - 5;
+                ctx.font = `${fontsize}px FEH`;
+            }
+            await ctx.fillText(name, 400, 160 + (i * 250))
+            ctx.font = '25px FEH';
+            await ctx.fillText(title, 400, 210 + (i * 250))
         }
-        while (ctx.measureText(name).width > 500) {
-            fontsize = fontsize - 5;
-            ctx.font = `${fontsize}px FEH`;
-        }
-        await ctx.fillText(name, 400, 160 + (i * 250))
-        ctx.font = '25px FEH';
-        await ctx.fillText(title, 400, 210 + (i * 250))
+
 
     }
 
