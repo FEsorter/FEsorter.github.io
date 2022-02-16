@@ -1316,6 +1316,7 @@ let filter = {
     "rafiel",
     "olivia",
     "azura",
+    "dorothea",
     "peony",
     "mirabilis",
     "plumeria",
