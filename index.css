@@ -36,7 +36,7 @@ body {
     line-height: 80px;
     font-size: 20px;
     white-space: nowrap;
-  
+
 
 }
 
@@ -77,24 +77,39 @@ body {
 }
 
 
-#txtButton{
+#txtButton {
     background: url('./buttons/downloadtxt.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
 }
-#imgButton{
+
+#imgButton {
     background: url('./buttons/downloadimg.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
 }
 
-#buttonsTable{
+#resumeButton {
+    background: url('./buttons/resume.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+#resetButton {
+    background: url('./buttons/reset.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+
+#buttonsTable {
     border: none;
 }
 
-#buttonbox button{
+#buttonbox button {
     width: 50%;
 }
 
@@ -143,14 +158,14 @@ body {
     background-color: transparent;
     background: url('./arrow.png') no-repeat left center;
     background-size: 20px auto;
-    height:  30px;
+    height: 30px;
     padding-left: 35px;
     border: none;
     color: white;
     font-family: 'FEH';
     font-size: 20px;
 }
-   
+
 
 .content {
     padding: 0 18px;
@@ -168,22 +183,22 @@ body {
 }
 
 .collapsible :after {
-   transition: all 0.5s;
-   
+    transition: all 0.5s;
+
     /* Unicode character for "plus" sign (+) */
-    
+
 }
 
 .active:after {
-   background-image: url('./arrowdown.png')no-repeat left center;
-   background-size: auto 20px; 
-   
+    background-image: url('./arrowdown.png')no-repeat left center;
+    background-size: auto 20px;
+
     /* Unicode character for "minus" sign (-) */
 }
 
 .active {
-   background-image: url('./arrowdown.png');
-   background-size: auto 20px; 
+    background-image: url('./arrowdown.png');
+    background-size: auto 20px;
     /* Unicode character for "minus" sign (-) */
 }
 
@@ -204,7 +219,7 @@ body {
     background-position: 47% 15%, 50% 50%;
     vertical-align: bottom;
     line-height: 80px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
@@ -224,7 +239,7 @@ body {
     background-position: 47% 15%, 50% 50%;
     vertical-align: bottom;
     line-height: 80px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
@@ -232,7 +247,7 @@ body {
     text-align: center;
     min-width: 150px;
     height: 70px;
-   
+
     cursor: pointer;
     font-family: FEH;
     color: white;
@@ -249,7 +264,7 @@ body {
     width: 150px;
     height: 70px;
     padding: 0px;
-    
+
     cursor: pointer;
     font-family: FEH;
     color: white;
@@ -311,10 +326,13 @@ body {
     white-space: nowrap;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
-    
+
 
 }
-.marquee::-webkit-scrollbar { width: 0 !important }
+
+.marquee::-webkit-scrollbar {
+    width: 0 !important
+}
 
 .marquee p {
     width: 100%;

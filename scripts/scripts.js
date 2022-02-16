@@ -152,8 +152,9 @@ function selectAllMainline() {
    }
 }
 
-function reloadPage(){
+function reset(){
    window.location.reload();
+   window.localStorage.clear()
 }
 
 function selectAllRomhack() {
@@ -171,6 +172,7 @@ function portraitChoice(id1, id2) {
 function hideAll(){
 
 document.getElementById('allCheckboxes').style.display = 'none';
+document.getElementById('resumeButton').style.display = 'none';
 
 }
 

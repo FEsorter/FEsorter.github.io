@@ -31,7 +31,39 @@ let back_rec = []
 
 //The initialization of the letiable+++++++++++++++++++++++++++++++++++++++++++++
 
+function resume(){
+    if(!window.localStorage['charlist']){
+        window.alert('No saved data found.')
+        return;
+    }
+    this.transformTable()
+    charlist = JSON.parse(window.localStorage['charlist'])
+    lstMember = JSON.parse(window.localStorage['lstMember'].slice(0));
+    rec = JSON.parse(window.localStorage['rec'].slice(0));
+
+    equal = JSON.parse(window.localStorage['equal'].slice(0));
+    parent = JSON.parse(window.localStorage['parent'].slice(0));
+
+    cmp1 = window.localStorage['cmp1']
+    cmp2 = window.localStorage['cmp2']
+    head1 = window.localStorage['head1']
+    head2 = window.localStorage['head2']
+    nrec = window.localStorage['nrec']
+    finishSize = window.localStorage['finishSize']
+    numQuestion = window.localStorage['numQuestion']
+    totalSize = window.localStorage['totalSize']
+    finishFlag = 0;
+
+    
+
+    document.getElementById('resumeButton').style.display = 'none';
+    document.getElementById('allCheckboxes').style.display = 'none';
+    showImage();
+
+}
+
 function start() {
+    window.localStorage['charlist'] = JSON.stringify(charlist)
     this.transformTable()
     let n = 0;
     let mid;
@@ -79,12 +111,15 @@ function start() {
     numQuestion = 1;
     finishSize = 0;
     finishFlag = 0;
+    window.localStorage['totalSize'] = JSON.stringify(totalSize)
 
     showImage()
 }
 
 
 function sortList(flag) {
+
+    /*
 
     back_last = lstMember.slice(0);
     back_record = rec.slice(0);
@@ -99,6 +134,23 @@ function sortList(flag) {
     back_nrec = nrec;
     back_finishsize = finishSize
     back_numQuestion = numQuestion
+
+    */
+
+    window.localStorage['lstMember'] = JSON.stringify(lstMember.slice(0))
+    window.localStorage['rec'] = JSON.stringify(rec.slice(0));
+
+    window.localStorage['equal'] = JSON.stringify(equal.slice(0));
+    window.localStorage['parent'] = JSON.stringify(parent.slice(0));
+
+    window.localStorage['cmp1'] = cmp1;
+    window.localStorage['cmp2'] = cmp2;
+    window.localStorage['head1'] = head1;
+    window.localStorage['head2'] = head2;
+    window.localStorage['nrec'] = nrec;
+    window.localStorage['finishSize'] = finishSize
+    window.localStorage['numQuestion'] = numQuestion
+
 
     let i;
     let str;
@@ -200,26 +252,43 @@ function sortList(flag) {
 
 function undo() {
 
-    lstMember = back_last.slice(0);
-    rec = back_record.slice(0);
+    lstMember = JSON.parse(window.localStorage['lstMember'].slice(0));
+    rec = JSON.parse(localStorage['rec'].slice(0));
 
-    equal = back_equal.slice(0);
-    parent = back_parent.slice(0);
+    equal = JSON.parse(localStorage['equal'].slice(0));
+    parent = JSON.parse(localStorage['parent'].slice(0));
 
-    cmp1 = back_cmp1;
-    cmp2 = back_cmp2;
-    head1 = back_head1;
-    head2 = back_head2;
-    nrec = back_nrec;
-    finishSize = back_finishsize
-    numQuestion = back_numQuestion;
+    cmp1 = window.localStorage['cmp1']
+    cmp2 = window.localStorage['cmp2']
+    head1 = window.localStorage['head1']
+    head2 = window.localStorage['head2']
+    nrec = window.localStorage['nrec']
+    finishSize = window.localStorage['finishSize']
+    numQuestion = window.localStorage['numQuestion']
 
     showImage();
 
+/*
+       localStorage['lstMember'] = lstMember.slice(0);
+    localStorage['rec'] = rec.slice(0);
+
+    localStorage['equal'] = equal.slice(0);
+    localStorage['parent'] = parent.slice(0);
+
+    localStorage['cmp1'] = cmp1;
+    localStorage['cmp2'] = cmp2;
+    localStorage['head1'] = head1;
+    localStorage['head2'] = head2;
+    localStorage['nrec'] = nrec;
+    localStorage['finishSize'] = finishSize
+    localStorage['numQuestion'] = numQuestion
+
+*/
 }
 
 
 function showResult() {
+    window.localStorage.clear()
     let ranking = 1;
     let sameRank = 1;
     let str = "";
