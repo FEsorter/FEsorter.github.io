@@ -161,7 +161,7 @@ document.getElementById('allCheckboxes').style.display = 'none';
 
 
 async function initialize(){
-   this.hideAll()
+   
    charlist = [];
    for(let i = 0; i < titlesArr.length; i++){
       if(document.getElementById(`option${i}`).checked){
@@ -174,8 +174,16 @@ async function initialize(){
          charlist = charlist.concat(filter[romhacksArr[i]])
       }
    }
+   this.applyFilters();
+   if (charlist.length < 2){
+      window.alert('You need to select more than 2 characters.')
+      return;
+   }
 
-   this.applyFilters()
+
+
+   this.hideAll()
+   
    this.start();
 
    //document.getElementById('fldMiddleB').onclick = 'undo();'

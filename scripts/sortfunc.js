@@ -84,17 +84,6 @@ function start() {
 }
 
 
-
-//&#12522;&#12473;&#12488;&#12398;&#12477;&#12540;&#12488;+++++++++++++++++++++++++++++++++++++++++++
-
-//flag&#65306;Don't know characters
-
-// -1&#65306;Chose the left
-
-// 0&#65306;Tie
-
-// 1&#65306;Chose the right
-
 function sortList(flag) {
 
     back_last = lstMember.slice(0);
@@ -274,10 +263,6 @@ function showImage() {
     numQuestion++;
 }
 
-
-
-//Convert numeric value into a name (emoticon)+++++++++++++++++++++++++++++++
-
 function toNameFace(n) {
     let displayName = all[charlist[n]];
     return displayName;
@@ -299,8 +284,6 @@ function transformTable() {
 
 function downloadTxt() {
     var textDoc = document.createElement('a');
-    console.log('help???')
-
     textDoc.href = 'data:attachment/text,' + encodeURI(resultstr);
     textDoc.target = '_blank';
     textDoc.download = 'sorterResults.txt';
@@ -357,6 +340,9 @@ async function drawPortraits() {
         portrait.src = `portraits/${porkey}.png`
         await ctx.drawImage(portrait, 176, 150 + (i * 250) - 100, 200, 200);
         let name = all[charlist[lstMember[0][i]]]
+        if(name.includes('(')){
+            name = name.substring(0, name.indexOf('(')-1)
+        }
         while (ctx.measureText(name).width > 500) {
             fontsize = fontsize - 5;
             ctx.font = `${fontsize}px FEH`;
@@ -371,10 +357,9 @@ async function drawPortraits() {
 }
 
 function downloadCanvas() {
-    console.log('help??')
 
     var link = document.createElement('a');
-    link.download = 'filename.png';
+    link.download = 'topTen.png';
     link.href = document.getElementById('topTen').toDataURL()
     link.click();
 }
