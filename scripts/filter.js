@@ -33,7 +33,6 @@ let filter = {
     "julian",
     "lena",
     "phina",
-    "navarre",
     "camus",
     "sirius",
     "nyna",
