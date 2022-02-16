@@ -1071,7 +1071,7 @@ let filter = {
     "shadow",
     "shon",
     "shuuda",
-    "siegfreid",
+    "siegfried",
     "storm",
     "tamiko",
     "tekun",
