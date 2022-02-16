@@ -75,7 +75,25 @@ body {
 
 }
 
-#buttonbox button img {
+
+#txtButton{
+    background: url('./buttons/downloadtxt.png');
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: 50% 50%;
+}
+#imgButton{
+    background: url('./buttons/downloadimg.png');
+    background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: 50% 50%;
+}
+
+#buttonsTable{
+    border: none;
+}
+
+#buttonbox button{
     width: 50%;
 }
 
