@@ -95,6 +95,21 @@ var music_index;
 
 let charlist = []
 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  while (currentIndex != 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 
 function toggleCollapsible(id){
    let el = document.getElementById(id);
@@ -219,7 +234,7 @@ function applyFilters(){
       charlist = filter[filtersArr[i]].filter(element => charlist.includes(element));
    }
 
-   console.log(charlist)
+   charlist = this.shuffle(charlist)
 
 }
 
