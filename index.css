@@ -33,6 +33,16 @@ table tbody tr td a {
     background-repeat: no-repeat;
 }
 
+#twitter {
+    background: url('./buttons/twitter.png');
+        background-size: 40px 40px;
+    background-position: 50% 50%;
+
+    background-repeat: no-repeat;
+}
+
+
+
 
 
 #discord {
