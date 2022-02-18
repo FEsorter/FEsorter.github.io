@@ -666,6 +666,8 @@ let filter = {
     "volke_rd",
     "volug",
     "yune",
+    "renning_por",
+    "renning_rd",
     "zelgius_por",
     "zihark_por",
     "zelgius_rd",
@@ -690,8 +692,6 @@ let filter = {
     "ludveck",
     "muston",
     "numida",
-    "renning_por",
-    "renning_rd",
     "shiharam",
     "valtome"
   ],
