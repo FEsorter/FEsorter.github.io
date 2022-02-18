@@ -525,6 +525,7 @@ let filter = {
     "hayden",
     "carlyle",
     "vigarde",
+    "tirado",
     "fado"
   ],
   "Path of Radiance / Radiant Dawn": [

@@ -478,6 +478,7 @@ let all = {
   "dozla": "Dozla",
   "rennac": "Rennac",
   "ismaire": "Ismaire",
+  "tirado": "Tirado",
   "joshua": "Joshua",
   "natasha": "Natasha",
   "gerik": "Gerik",
