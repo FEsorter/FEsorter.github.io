@@ -12,7 +12,7 @@ let nrec;
 let numQuestion;
 let totalSize;
 let finishSize;
-let finishFlag;
+let finishFlag = 5;
 
 let back_cmp1, back_cmp2;
 let back_head1, back_head2;
@@ -119,23 +119,10 @@ function start() {
 
 function sortList(flag) {
 
-    /*
 
-    back_last = lstMember.slice(0);
-    back_record = rec.slice(0);
-
-    back_equal = equal.slice(0);
-    back_parent = parent.slice(0);
-
-    back_cmp1 = cmp1;
-    back_cmp2 = cmp2;
-    back_head1 = head1;
-    back_head2 = head2;
-    back_nrec = nrec;
-    back_finishsize = finishSize
-    back_numQuestion = numQuestion
-
-    */
+    if(finishFlag == 5){
+        return;
+    }
 
     window.localStorage['lstMember'] = JSON.stringify(lstMember.slice(0))
     window.localStorage['rec'] = JSON.stringify(rec.slice(0));
@@ -154,7 +141,7 @@ function sortList(flag) {
 
     let i;
     let str;
-    //rec preservation
+
     if (flag < 0) {
         rec[nrec] = lstMember[cmp1][head1];
         head1++;
@@ -251,6 +238,11 @@ function sortList(flag) {
 }
 
 function undo() {
+
+    if(finishFlag == 5){
+        this.initialize()
+        return;
+    }
 
     lstMember = JSON.parse(window.localStorage['lstMember'].slice(0));
     rec = JSON.parse(localStorage['rec'].slice(0));
