@@ -24,7 +24,8 @@ const titlesArr = [
    'TMS#FE',
    'TMS#FE Extra',
    'Warriors',
-   'Heroes'
+   'Heroes',
+   'Cipher'
 ]
 
 const romhacksArr = [

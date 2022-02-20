@@ -994,6 +994,8 @@ let filter = {
     "yelena"
   ],
   "Heroes": [
+    "feh",
+    "fehnix",
     "veronica",
     "henriette",
     "alfonse",
@@ -1033,9 +1035,20 @@ let filter = {
     "elm",
     "letizia"
   ],
+
+  "Cipher": [
+    "alice_cipher",
+    "emma_cipher",
+    "niamh",
+    "valjean",
+    "shade",
+    "randal",
+    "poe",
+    "yuzu"
+  ], 
   "The Last Promise": [
     "ace",
-    "alice",
+    "alice_tlp",
     "althares",
     "anakin",
     "arthur_tlp",
@@ -1044,7 +1057,7 @@ let filter = {
     "cia",
     "corben",
     "eduardo",
-    "emma",
+    "emma_tlp",
     "frederick_tlp",
     "galagar",
     "gary",
@@ -1381,12 +1394,13 @@ let filter = {
     "tsubasa",
     "inanna",
     "lirin",
-    "alice",
+    "alice_tlp",
     "hokulani",
     "natsuko",
     "luceil",
     "marcie",
-    "patty_4k"
+    "patty_4k",
+    "emma_cipher"
   ],
   "Wyvern Riders": [
     "minerva",
@@ -1726,7 +1740,7 @@ let filter = {
     "mercedes_war",
     "marianne_war",
     "linhardt_war",
-    "emma",
+    "emma_tlp",
     "tamiko",
     "anwen",
     "batari",
@@ -2522,14 +2536,19 @@ let filter = {
     "leon_tlp",
     "seymour",
     "teodros",
-    "tim"
+    "tim",
+    "randal",
+    "valjean",
+    "fehnix"
   ],
   "Female Only": [
+    "feh",
     "caeda",
     "tiki_fe1",
     "tiki_fe13",
     "tiki_tms",
     "nagi",
+    "niamh",
     "kris_f",
     "norne",
     "cecil",
@@ -2868,9 +2887,14 @@ let filter = {
     "nifl",
     "ash",
     "letizia",
-    "alice",
+    "alice_tlp",
+     "alice_cipher",
     "cia",
-    "emma",
+    "emma_tlp",
+     "emma_cipher",
+     "yuzu",
+     "shade",
+     "poe",
     "inanna",
     "karina",
     "lirin",
