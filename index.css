@@ -250,9 +250,10 @@ table tbody tr td a {
     background: url('./portraits/edelgard_academy.png'), url('./frame.png');
     background-size: 130px 130px, 180px 240px;
     background-repeat: no-repeat, no-repeat;
-    background-position: 47% 15%, 50% 50%;
+    background-position: 47% 25%, 50% 50%;
     vertical-align: bottom;
-    line-height: 80px;
+    line-height: 22px;
+    padding-bottom: 45px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
@@ -270,9 +271,10 @@ table tbody tr td a {
     background: url('./portraits/dimitri_academy.png'), url('./frame.png');
     background-size: 130px 130px, 180px 240px;
     background-repeat: no-repeat, no-repeat;
-    background-position: 47% 15%, 50% 50%;
+    background-position: 47% 25%, 50% 50%;
     vertical-align: bottom;
-    line-height: 80px;
+    line-height: 22px;
+    padding-bottom: 45px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }

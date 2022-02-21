@@ -34,7 +34,9 @@ const romhacksArr = [
    "Vision Quest",
    "Vision Quest Extra",
    "Four Kings",
-   "Four Kings Extra"
+   "Four Kings Extra",
+   "Code of the Burger King",
+   "Code of the Burger King Extra"
    
 ]
 
