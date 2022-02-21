@@ -1857,7 +1857,6 @@ let filter = {
         "bors_cotbk",
         "marty_cotbk",
         "azel_cotbk",
-
         "the_king",
         "samto_cotbk",
         "demijagen",
@@ -2669,18 +2668,15 @@ let filter = {
     "Female Only": [
 
         "fiona_cotbk",
-
+        "dagr",
         "rebecca_cotbk",
         "priscilla_cotbk",
-
+        "nott",
         "generic_ilian",
-
+        "eitri",
         "bernie_cotbk",
-
         "papaya",
-
         "birdie",
-
         "feh",
         "caeda",
         "tiki_fe1",
@@ -3094,6 +3090,7 @@ let filter = {
         "anna_fe13",
         "anna_feh",
         "anna_fe14",
-        "yelena"
+        "yelena",
+        "thorr"
     ]
 }
