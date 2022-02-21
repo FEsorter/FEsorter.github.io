@@ -93,6 +93,46 @@ const doublesRemove = [
 "diarmuid_fe4"
 ]
 
+const spoilerKeep = [
+'owain',
+'severa',
+'inigo',
+'edelgard_academy',
+'edelgard_war',
+'jeritza',
+'kronya',
+'rhea',
+'sephiran_por',
+'sephiran_rd',
+'zelgius_por',
+'zelgius_rd',
+'sirius',
+'camus',
+'camus',
+'renning_por',
+'renning_rd'
+
+]
+const spoilerRemove = [
+'odin',
+'selena_fates',
+'laslow',
+'flame_emperor',
+'flame_emperor',
+'death_knight',
+'monica',
+'seiros',
+'lehran',
+'lehran',
+'black_knight_por',
+'black_knight_rd',
+'zeke',
+'sirius',
+'zeke',
+'bertram',
+'bertram'
+]
+
 
 var music_index;
 
@@ -229,6 +269,12 @@ function portraitFilter(suffix){
 function applyFilters(){
    for (let i = 0; i < doublesRemove.length; i++){
       this.removeDoubles(doublesKeep[i], doublesRemove[i])
+   }
+
+   if(document.getElementById('dupes').checked){
+      for (let i = 0; i < spoilerRemove.length; i++){
+      this.removeDoubles(spoilerKeep[i], spoilerRemove[i])
+   }
    }
 
    document.getElementById('3hportrait1').checked ? this.portraitFilter('_war') : this.portraitFilter('_academy')

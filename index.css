@@ -25,6 +25,21 @@ table tbody tr td a {
   height: 100%;
 }
 
+#dupes {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+#dupesSpan{
+text-align: center;
+font-size: 12px;
+}
+
+#dupeDiv{
+    text-align: center;
+}
+
 #kofi {
     background: url('./buttons/kofi.png');
         background-size: 40px 40px;
