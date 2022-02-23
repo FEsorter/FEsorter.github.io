@@ -1035,7 +1035,6 @@ let filter = {
         "elm",
         "letizia"
     ],
-
     "Cipher": [
         "alice_cipher",
         "emma_cipher",
@@ -1185,7 +1184,6 @@ let filter = {
         "zuljalal",
         "zuzana"
     ],
-
     "Vision Quest Extra": [
         "akela",
         "macbriare",
@@ -1267,10 +1265,7 @@ let filter = {
         "teodros",
         "tim"
     ],
-
-
     "Code of the Burger King": [
-
         "bk_cotbk",
         "sephiran_cotbk",
         "fiona_cotbk",
@@ -1306,9 +1301,7 @@ let filter = {
         "not_kelik",
         "honse",
         "ronald"
-
     ],
-
     "Code of the Burger King Extra": [
         "grimace",
         "joshua_cotbk",
@@ -1370,7 +1363,7 @@ let filter = {
         "anakin",
         "kelik",
         "shon",
-        "siegfreid",
+        "siegfried",
         "storch",
         "titus",
         "waluyo",
@@ -3427,6 +3420,7 @@ let filter = {
         "lester"
     ],
     "Purple": [
+        "grimace",
         "altina",
         "lorenz_3h_academy",
         "lorenz_3h_war",
