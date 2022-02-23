@@ -50,7 +50,17 @@ const filtersArr = [
 "Archers",
 "Healers",
 "Wyvern Riders",
-"Shapeshifters"
+"Shapeshifters",
+"Red / Orange",
+"Pink", 
+"Blue",
+"Purple",
+"Green",
+"Blonde",
+"Brown",
+"Black", 
+"White / Gray",
+"Bald"
 ]
 
 const doublesKeep = [

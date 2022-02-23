@@ -31,6 +31,8 @@ table tbody tr td a {
 
 }
 
+
+
 #dupesSpan{
 text-align: center;
 font-size: 12px;
@@ -229,6 +231,11 @@ font-size: 12px;
 
 #header {
     text-align: center
+}
+
+#hcHeader {
+    text-align: right;
+    font-size: 12px;
 }
 
 .collapsible :after {
