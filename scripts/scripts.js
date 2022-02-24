@@ -120,7 +120,10 @@ const spoilerKeep = [
 'camus',
 'camus',
 'renning_por',
-'renning_rd'
+'renning_rd',
+'brigid',
+'tiki_fe13',
+'thales'
 
 ]
 const spoilerRemove = [
@@ -140,7 +143,10 @@ const spoilerRemove = [
 'sirius',
 'zeke',
 'bertram',
-'bertram'
+'bertram',
+'eyvel',
+'tiki_fe1',
+'lord_arundel'
 ]
 
 
