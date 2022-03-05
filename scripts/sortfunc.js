@@ -27,10 +27,6 @@ let back_equal = []
 let back_rec = []
 
 
-
-
-//The initialization of the letiable+++++++++++++++++++++++++++++++++++++++++++++
-
 function resume(){
     if(!window.localStorage['charlist']){
         window.alert('No saved data found.')
@@ -63,7 +59,7 @@ function resume(){
 }
 
 function start() {
-    window.localStorage['charlist'] = JSON.stringify(charlist)
+    window.localStorage['charlist'] = JSON.stringify(charlist.slice(0))
     this.transformTable()
     let n = 0;
     let mid;
@@ -137,6 +133,7 @@ function sortList(flag) {
     window.localStorage['nrec'] = nrec;
     window.localStorage['finishSize'] = finishSize
     window.localStorage['numQuestion'] = numQuestion
+    window.localStorage['charlist'] = JSON.stringify(charlist.slice(0))
 
 
     let i;
@@ -238,6 +235,7 @@ function sortList(flag) {
 }
 
 function undo() {
+    
 
     if(finishFlag == 5){
         this.initialize()
@@ -257,6 +255,7 @@ function undo() {
     nrec = window.localStorage['nrec']
     finishSize = window.localStorage['finishSize']
     numQuestion = window.localStorage['numQuestion']
+    charlist = JSON.parse(window.localStorage['charlist'])
 
     showImage();
 
@@ -346,7 +345,6 @@ function transformTable() {
 function downloadTxt() {
     var textDoc = document.createElement('a');
     textDoc.href = 'data:text/plain;charset=utf-16,'+ encodeURIComponent(resultstr)
-    //textDoc.href = 'data:attachment/text,' + encodeURI(resultstr);
     textDoc.target = '_blank';
     textDoc.download = 'sorterResults.txt';
     textDoc.click();
@@ -354,7 +352,7 @@ function downloadTxt() {
 
 async function draw() {
     if (charlist.length < 10) {
-        height = 150 + (charlist.length * 250) - 75
+        height = 150 + (charlist.length * 250) - 100
         document.getElementById('topTen').setAttribute('height', height.toString())
     }
     let canvas = document.getElementById('topTen');
