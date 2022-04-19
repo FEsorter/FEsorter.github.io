@@ -10,7 +10,7 @@ let all = {
   "bat": "Bat",
   "blair": "Blair",
   "chandra": "Chandra",
-  "clovis": "Clovis"
+  "clovis": "Clovis",
   "dakini": "Dakini",
   "dale": "Dale",
   "darius": "Darius",
@@ -64,7 +64,7 @@ let all = {
   "bortz": "Bortz",
   "brauma": "Brauma",
   "cameron": "Cameron",
-  "eligor": "Eligor",
+  "eligor_dlatmol": "Eligor (DLatMoL)",
   "fuwades": "Fuwades",
   "gdon": "Gdon",
   "jamie": "Jamie",
@@ -76,8 +76,8 @@ let all = {
   "musis": "Musis",
   "olga": "Olga",
   "reya": "Reya",
-  "sanchez": "Sanchez"
-  "thomas": "Thomas"
+  "sanchez": "Sanchez",
+  "thomas": "Thomas",
   "bk_cotbk": "Black Knight (CotBK)",
   "sephiran_cotbk": "Sephiran (CotBK)",
   "fiona_cotbk": "Fiona (CotBK)",

@@ -1380,14 +1380,15 @@ let filter = {
     "wren",
     "yet",
     "zahhak"
-  ]
+  ],
+
   "Dark Lord and the Maiden of Light Extra": [
     "attila",
     "bootes",
     "bortz",
     "brauma",
     "cameron",
-    "eligor",
+    "eligor_dlatmol",
     "fuwades",
     "gdon",
     "jamie",
@@ -1401,7 +1402,8 @@ let filter = {
     "reya",
     "sanchez",
     "thomas"
-  ]
+  ],
+
   "Lords": [
     "marth",
     "alm",
@@ -1592,7 +1594,7 @@ let filter = {
     "suzhen",
     "egil",
     "clovis",
-    "eligor"
+    "eligor_dlatmol"
   ],
   "Shapeshifters": [
     "tiki_fe1",
@@ -2802,8 +2804,8 @@ let filter = {
     "vito",
     "volund",
     "weaver",
-    "zahhak"
-    "eligor",
+    "zahhak",
+    "eligor_dlatmol",
     "gdon",
     "jamie",
     "lotz",
@@ -3881,7 +3883,7 @@ let filter = {
     "freesia",
     "brauma",
     "blair",
-    "ardoome"
+    "ardoome",
     "anakin",
     "amelia",
     "constance_academy",
@@ -4078,7 +4080,7 @@ let filter = {
     "luca",
     "mide",
     "nox",
-    "ronaldo"
+    "ronaldo",
     "tobin",
     "manuela",
     "leif_fe4",
@@ -4266,7 +4268,7 @@ let filter = {
     "arthur_dlatmol",
     "chandra",
     "eli",
-    "eligor",
+    "eligor_dlatmol",
     "fuwades",
     "james",
     "kathe",
