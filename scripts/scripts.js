@@ -151,6 +151,11 @@ const spoilerRemove = [
 'lord_arundel'
 ]
 
+const otherGamesArr = [
+"Triangle Strategy",
+"Triangle Strategy Extra"
+]
+
 
 var music_index;
 
@@ -202,9 +207,11 @@ function uncheckFilters(){
 function startup() {
    this.uncheckFilters()
    document.getElementById('romhackSelect_all').checked = false;
+   document.getElementById('otherSelect_all').checked = false;
    document.getElementById('topTen').style.display = 'none';
    document.getElementById('resultcontainer').style.display = 'none';
    this.selectAllRomhack()
+   this.selectAllOther()
 }
 
 function selectAllMainline() {
@@ -221,6 +228,12 @@ function reset(){
 function selectAllRomhack() {
    for (let i = 0; i < romhacksArr.length; i++) {
       document.getElementById('romhack' + i).checked = document.getElementById('romhackSelect_all').checked;
+   }
+}
+
+function selectAllOther() {
+   for (let i = 0; i < otherGamesArr.length; i++) {
+      document.getElementById('other' + i).checked = document.getElementById('otherSelect_all').checked;
    }
 }
 
@@ -250,6 +263,12 @@ async function initialize(){
    for(let i = 0; i < romhacksArr.length; i++){
          if(document.getElementById(`romhack${i}`).checked){
          charlist = charlist.concat(filter[romhacksArr[i]])
+      }
+   }
+
+   for(let i = 0; i < otherGamesArr.length; i++){
+         if(document.getElementById(`other${i}`).checked){
+         charlist = charlist.concat(filter[otherGamesArr[i]])
       }
    }
    this.applyFilters();
