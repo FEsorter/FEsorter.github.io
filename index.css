@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'FEH';
-    src: url(./feh.ttf) format("truetype");
+    src: url(./other_assets/feh.ttf) format("truetype");
 
 }
 
@@ -207,7 +207,7 @@ font-size: 12px;
 
 .collapsible {
     background-color: transparent;
-    background: url('./arrow.png') no-repeat left center;
+    background: url('./other_assets/arrow.png') no-repeat left center;
     background-size: 20px auto;
     height: 30px;
     padding-left: 35px;
@@ -241,21 +241,21 @@ font-size: 12px;
 .collapsible :after {
     transition: all 0.5s;
 
-    /* Unicode character for "plus" sign (+) */
+
 
 }
 
 .active:after {
-    background-image: url('./arrowdown.png')no-repeat left center;
+    background-image: url('./other_assets/arrowdown.png')no-repeat left center;
     background-size: auto 20px;
 
-    /* Unicode character for "minus" sign (-) */
+
 }
 
 .active {
-    background-image: url('./arrowdown.png');
+    background-image: url('./other_assets/arrowdown.png');
     background-size: auto 20px;
-    /* Unicode character for "minus" sign (-) */
+
 }
 
 
@@ -269,7 +269,7 @@ font-size: 12px;
     padding: 10px;
     font-family: FEH;
     border-color: white;
-    background: url('./portraits/edelgard_academy.png'), url('./frame.png');
+    background: url('./portraits/edelgard_academy.png'), url('./other_assets/frame.png');
     background-size: 130px 130px, 180px 240px;
     background-repeat: no-repeat, no-repeat;
     background-position: 47% 25%, 50% 50%;
@@ -290,7 +290,7 @@ font-size: 12px;
     border: white;
     font-family: FEH;
     border-color: white;
-    background: url('./portraits/dimitri_academy.png'), url('./frame.png');
+    background: url('./portraits/dimitri_academy.png'), url('./other_assets/frame.png');
     background-size: 130px 130px, 180px 240px;
     background-repeat: no-repeat, no-repeat;
     background-position: 47% 25%, 50% 50%;
@@ -309,7 +309,7 @@ font-size: 12px;
     cursor: pointer;
     font-family: FEH;
     color: white;
-    background: url('./smallframe.png');
+    background: url('./other_assets/smallframe.png');
     background-size: 155px 115px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -327,7 +327,7 @@ font-size: 12px;
     font-family: FEH;
     color: white;
     margin: auto auto;
-    background: url('./smallframe.png');
+    background: url('./other_assets/smallframe.png');
     background-size: 155px 115px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -552,7 +552,7 @@ a:active {
 }
 
 body {
-    background-image: url("background.png");
+    background-image: url("other_assets/background.png");
     background-size: auto;
     color: white;
 }

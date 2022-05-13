@@ -50,8 +50,6 @@ function resume(){
     totalSize = window.localStorage['totalSize']
     finishFlag = 0;
 
-    
-
     document.getElementById('resumeButton').style.display = 'none';
     document.getElementById('allCheckboxes').style.display = 'none';
     showImage();
@@ -116,7 +114,7 @@ function start() {
 function sortList(flag) {
 
 
-    if(finishFlag == 5){
+    if(finishFlag == 5 || finishFlag == 1){
         return;
     }
 
@@ -242,6 +240,10 @@ function undo() {
         return;
     }
 
+    if(finishFlag == 1){
+        return;
+    }
+
     lstMember = JSON.parse(window.localStorage['lstMember'].slice(0));
     rec = JSON.parse(localStorage['rec'].slice(0));
 
@@ -288,8 +290,8 @@ function showResult() {
     str += "<tr><td id= \"rightHeader\"> Rank <\/td><td id= \"leftHeader\">Character<\/td><\/tr>";
 
     for (i = 0; i < charlist.length; i++) {
-        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] + ".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + all[charlist[lstMember[0][i]]] + "<\/td><\/tr>";
-        resultstr += `${ranking}: ${all[charlist[lstMember[0][i]]]}\n`
+        str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] + ".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + library[charlist[lstMember[0][i]]].display + "<\/td><\/tr>";
+        resultstr += `${ranking}: ${library[charlist[lstMember[0][i]]].display}\n`
         if (i < charlist.length - 1) {
             if (equal[lstMember[0][i]] == lstMember[0][i + 1]) {
                 sameRank++;
@@ -316,15 +318,15 @@ function showImage() {
     let str1 = "" + toNameFace(index1);
     let str2 = "" + toNameFace(index2);
     document.getElementById("lblProgress").innerHTML = str0;
-    document.getElementById("leftField").style.backgroundImage = `url('./portraits/${charlist[index1]}.png'), url('./frame.png')`;
-    document.getElementById("rightField").style.backgroundImage = `url('./portraits/${charlist[index2]}.png'), url('./frame.png')`;
+    document.getElementById("leftField").style.backgroundImage = `url('./portraits/${charlist[index1]}.png'), url('./other_assets/frame.png')`;
+    document.getElementById("rightField").style.backgroundImage = `url('./portraits/${charlist[index2]}.png'), url('./other_assets/frame.png')`;
     document.getElementById("leftField").innerHTML = str1;
     document.getElementById("rightField").innerHTML = str2;
     numQuestion++;
 }
 
 function toNameFace(n) {
-    let displayName = all[charlist[n]];
+    let displayName = library[charlist[n]].display;
     return displayName;
 }
 
@@ -358,7 +360,7 @@ async function draw() {
     let canvas = document.getElementById('topTen');
     let ctx = canvas.getContext('2d');
     var bg = new Image();
-    bg.src = 'template.png'
+    bg.src = './other_assets/template.png'
 
     bg.onload = async function() {
         ctx.drawImage(bg, 0, 0, 900, 2525);
@@ -373,23 +375,14 @@ async function drawPortraits() {
     let ctx = canvas.getContext('2d');
     ctx.font = '85px FEH';
     ctx.fillStyle = "#ffffff";
-    let keys = await Object.keys(filter)
+    
     for (let i = 0;(i < 10); i++) {
         if (i >= charlist.length) {
             break;
         }
-        
-        
+         
         let porkey = charlist[lstMember[0][i]]
-        console.log(porkey)
-        let title = "";
-        for (let i = 0; i < keys.length; i++) {
-            let arr = filter[keys[i]];
-            if (arr.includes(porkey)) {
-                title = keys[i]
-                break;
-            }
-        }
+        let title = library[porkey].origin;
 
         if (title.includes('Extra')) {
             title = title.substring(0, title.length - 6)
@@ -401,7 +394,7 @@ async function drawPortraits() {
             ctx.drawImage(portrait, 176, 150 + (i * 250) - 100, 200, 200);
             ctx.font = '80px FEH';
             let fontsize = 80;
-            let name = all[charlist[lstMember[0][i]]]
+            let name = library[porkey].display
             if (name.includes('(')) {
                 name = name.substring(0, name.indexOf('(') - 1)
             }
