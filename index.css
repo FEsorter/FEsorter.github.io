@@ -434,20 +434,20 @@ font-size: 12px;
 }
 
 #mainlineall {
-    font-size: 14px;
+   font-size: 14px;
 }
 
 
 #romhackSelect_all {
-    margin-left: 130px;
+    /*margin-left: 130px;*/
 }
 
 #otherSelect_all {
-    margin-left: 130px;
+    /*margin-left: 130px;*/
 }
 
 #optSelect_all {
-    margin-left: 130px;
+   /* margin-left: 130px;*/
 }
 
 

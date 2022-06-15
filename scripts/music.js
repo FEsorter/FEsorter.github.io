@@ -1,3 +1,6 @@
+
+var music_index;
+
 let music = {
 
 	1: {
@@ -58,5 +61,40 @@ let music = {
 
 }
 
+
+function toggle() {
+  bg_audio = document.getElementById("bg_music")
+  if (!bg_audio.paused) {
+    bg_audio.pause();
+    document.getElementById("toggle").src = "buttons/play.png";
+  } else {
+    bg_audio.volume = .2;
+    bg_audio.loop = true;
+    bg_audio.play();
+    document.getElementById("toggle").src = "buttons/pause.png";
+  }
+}
+
+function setMusic(load) {
+  if (load) {
+    music_index = Math.floor(Math.random() * 9) + 1;
+  }
+  let track = music[music_index];
+  document.getElementById("cover").src = "covers/" + track.cover;
+  document.getElementById("bg_music").src = "music/" + track.filepath;
+  document.getElementById("song_title").innerHTML = track.title;
+  console.log(document.getElementById("song_title"))
+}
+
+function changeSong(next) {
+  if (next) {
+    music_index == 9 ? music_index = 1 : music_index++;
+  } else {
+    music_index == 1 ? music_index = 9 : music_index--;
+  }
+  document.getElementById("bg_music").pause()
+  document.getElementById("toggle").src = "buttons/play.png";
+  setMusic(false);
+}
 
 

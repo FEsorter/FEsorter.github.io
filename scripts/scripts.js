@@ -1,153 +1,3 @@
-const titlesArr = [
-  'Shadow Dragon / New Mystery',
-  'Shadow Dragon / New Mystery Extra',
-  'Shadows of Valentia',
-  'Shadows of Valentia Extra',
-  'Genealogy of the Holy War',
-  'Genealogy of the Holy War Extra',
-  'Thracia 776',
-  'Thracia 776 Extra',
-  'Binding Blade',
-  'Binding Blade Extra',
-  'Blazing Blade',
-  'Blazing Blade Extra',
-  'Sacred Stones',
-  'Sacred Stones Extra',
-  'Path of Radiance / Radiant Dawn',
-  'Path of Radiance / Radiant Dawn Extra',
-  'Awakening',
-  'Awakening Extra',
-  'Fates',
-  'Fates Extra',
-  'Three Houses',
-  'Three Houses Extra',
-  'TMS#FE',
-  'TMS#FE Extra',
-  'Warriors',
-  'Heroes',
-  'Cipher'
-]
-const romhacksArr = [
-  "The Last Promise",
-  "The Last Promise Extra",
-  "Vision Quest",
-  "Vision Quest Extra",
-  "Four Kings",
-  "Four Kings Extra",
-  "Code of the Burger King",
-  "Code of the Burger King Extra",
-  "Dark Lord and the Maiden of Light",
-  "Dark Lord and the Maiden of Light Extra",
-]
-const filtersArr = [
-  "Male",
-  "Female",
-  "Lords",
-  "Refreshers",
-  "Myrmidons",
-  "Pegasus Knights",
-  "Archers",
-  "Healers",
-  "Wyvern Riders",
-  "Shapeshifters",
-  "Red / Orange",
-  "Pink",
-  "Blue",
-  "Purple",
-  "Green",
-  "Blonde",
-  "Brown",
-  "Black",
-  "White / Gray",
-  "Bald"
-]
-const doublesKeep = [
-  'palla_sov',
-  'catria_sov',
-  'est_sov',
-  'karel_fe6',
-  'bartre_fe6',
-  'marcus_fe6',
-  'eliwood_fe7',
-  'hector_fe7',
-  'murdock_fe6',
-  'guinivere_fe6',
-  'zephiel_fe6',
-  "merlinus_fe6",
-  "leif_fe5",
-  "nanna_fe5",
-  "finn_fe5",
-  "ced_fe5",
-  "diarmuid_fe5"
-]
-const doublesRemove = [
-  'palla_fe1',
-  'catria_fe1',
-  'est_fe1',
-  'karel_fe7',
-  'bartre_fe7',
-  'marcus_fe7',
-  'eliwood_fe6',
-  'hector_fe6',
-  'murdock_fe7',
-  'guinivere_fe7',
-  'zephiel_fe7',
-  "merlinus_fe7",
-  "leif_fe4",
-  "nanna_fe4",
-  "finn_fe4",
-  "ced_fe4",
-  "diarmuid_fe4"
-]
-const spoilerKeep = [
-  'owain',
-  'severa',
-  'inigo',
-  'edelgard_academy',
-  'edelgard_war',
-  'jeritza',
-  'kronya',
-  'rhea',
-  'sephiran_por',
-  'sephiran_rd',
-  'zelgius_por',
-  'zelgius_rd',
-  'sirius',
-  'camus',
-  'camus',
-  'renning_por',
-  'renning_rd',
-  'brigid',
-  'tiki_fe13',
-  'thales'
-]
-const spoilerRemove = [
-  'odin',
-  'selena_fates',
-  'laslow',
-  'flame_emperor',
-  'flame_emperor',
-  'death_knight',
-  'monica',
-  'seiros',
-  'lehran',
-  'lehran',
-  'black_knight_por',
-  'black_knight_rd',
-  'zeke',
-  'sirius',
-  'zeke',
-  'bertram',
-  'bertram',
-  'eyvel',
-  'tiki_fe1',
-  'lord_arundel'
-]
-const otherGamesArr = [
-  "Triangle Strategy",
-  "Triangle Strategy Extra"
-]
-var music_index;
 let charlist = []
 
 function shuffle(array) {
@@ -181,6 +31,8 @@ function uncheckFilters() {
   }
   let cbox = document.getElementById('3hportrait2')
   cbox.checked = false;
+  cbox = document.getElementById('3hportrait3')
+  cbox.checked = false;
   cbox = document.getElementById('tellius1')
   cbox.checked = false;
 }
@@ -189,6 +41,8 @@ function startup() {
   this.uncheckFilters()
   document.getElementById('romhackSelect_all').checked = false;
   document.getElementById('otherSelect_all').checked = false;
+  document.getElementById('romhackSelect_allExtra').checked = false;
+  document.getElementById('otherSelect_allExtra').checked = false;
   document.getElementById('topTen').style.display = 'none';
   document.getElementById('resultcontainer').style.display = 'none';
   this.selectAllRomhack()
@@ -204,6 +58,19 @@ function selectAllMainline() {
 function reset() {
   window.location.reload();
   window.localStorage.clear()
+}
+
+function selectAll(id, arr, option) {
+  for (let i = 0; i < arr.length; i++) {
+    document.getElementById(option + i).checked = document.getElementById(id).checked;
+  }
+}
+
+function selectAllExtra(id, arr, option) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].includes('Extra'))
+      document.getElementById(option + i).checked = document.getElementById(id).checked;
+  }
 }
 
 function selectAllRomhack() {
@@ -224,6 +91,14 @@ function portraitChoice(id1, id2) {
   cbox2.checked = !cbox1.checked;
 }
 
+function triplePortraitChoice(id1, id2, id3) {
+  let cbox1 = document.getElementById(id1)
+  let cbox2 = document.getElementById(id2)
+  let cbox3 = document.getElementById(id3)
+  cbox2.checked = !cbox1.checked;
+  cbox3.checked = cbox2.checked
+}
+
 function hideAll() {
   document.getElementById('allCheckboxes').style.display = 'none';
   document.getElementById('resumeButton').style.display = 'none';
@@ -232,7 +107,7 @@ async function initialize() {
   charlist = [];
   let keys = await Object.keys(library)
   for (let i = 0; i < titlesArr.length; i++) {
-    if(document.getElementById(`option${i}`).checked){
+    if (document.getElementById(`option${i}`).checked) {
       charlist = charlist.concat(keys.filter(key => library[key].origin == titlesArr[i]))
     }
   }
@@ -271,6 +146,32 @@ function portraitFilter(suffix) {
   }
 }
 
+function THfilter() {
+  chars = []
+  for (let i = 0; i < charlist.length; i++) {
+    if (charlist[i].includes('_war') || charlist[i].includes('_hopes') || charlist[i].includes('_academy')) {
+      chars.push(charlist[i].slice(0, charlist[i].lastIndexOf('_')));
+    }
+  }
+  chars = [...new Set(chars)];
+  for (let i = 0; i < chars.length; i++) {
+    if (document.getElementById('3hportrait1').checked) {
+      this.removeDoubles(`${chars[i]}_academy`, `${chars[i]}_war`)
+      this.removeDoubles(`${chars[i]}_academy`, `${chars[i]}_hopes`)
+    }
+    if (document.getElementById('3hportrait2').checked) {
+      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_academy`)
+      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_hopes`)
+      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_academy`)
+    }
+    if (document.getElementById('3hportrait3').checked) {
+      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_academy`)
+      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_war`)
+      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_academy`)
+    }
+  }
+}
+
 function applyFilters() {
   for (let i = 0; i < doublesRemove.length; i++) {
     this.removeDoubles(doublesKeep[i], doublesRemove[i])
@@ -280,7 +181,7 @@ function applyFilters() {
       this.removeDoubles(spoilerKeep[i], spoilerRemove[i])
     }
   }
-  document.getElementById('3hportrait1').checked ? this.portraitFilter('_war') : this.portraitFilter('_academy')
+  this.THfilter()
   document.getElementById('tellius1').checked ? this.portraitFilter('_rd') : this.portraitFilter('_por')
   for (let i = 0; i < filtersArr.length; i++) {
     if (document.getElementById(`filter${i}`).checked) {
@@ -292,39 +193,4 @@ function applyFilters() {
     }
     charlist = this.shuffle(charlist)
   }
-}
-
-function toggle() {
-  bg_audio = document.getElementById("bg_music")
-  if (!bg_audio.paused) {
-    bg_audio.pause();
-    document.getElementById("toggle").src = "buttons/play.png";
-  } else {
-    bg_audio.volume = .2;
-    bg_audio.loop = true;
-    bg_audio.play();
-    document.getElementById("toggle").src = "buttons/pause.png";
-  }
-}
-
-function setMusic(load) {
-  if (load) {
-    music_index = Math.floor(Math.random() * 9) + 1;
-  }
-  let track = music[music_index];
-  document.getElementById("cover").src = "covers/" + track.cover;
-  document.getElementById("bg_music").src = "music/" + track.filepath;
-  document.getElementById("song_title").innerHTML = track.title;
-  console.log(document.getElementById("song_title"))
-}
-
-function changeSong(next) {
-  if (next) {
-    music_index == 9 ? music_index = 1 : music_index++;
-  } else {
-    music_index == 1 ? music_index = 9 : music_index--;
-  }
-  document.getElementById("bg_music").pause()
-  document.getElementById("toggle").src = "buttons/play.png";
-  setMusic(false);
 }

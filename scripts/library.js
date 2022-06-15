@@ -1,4 +1,103 @@
 let library = {
+  "count_varley": {
+    "display": "Count Varley",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "count_gloucester": {
+    "display": "Count Gloucester",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "holst": {
+    "display": "Holst",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Pink"
+    ]
+  },
+  "count_hevring": {
+    "display": "Count Hevring",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Green"
+    ]
+  },
+  "count_bergliez": {
+    "display": "Count Bergliez",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Blue"
+    ]
+  },
+  "shez_m": {
+    "display": "Shez (M)",
+    "origin": "Three Hopes",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "shez_f": {
+    "display": "Shez (F)",
+    "origin": "Three Hopes",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "arval": {
+    "display": "Arval",
+    "origin": "Three Hopes",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "White"
+    ]
+  },
+  "shahid": {
+    "display": "Shahid",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Brown"
+    ]
+  },
+  "margrave_gautier": {
+    "display": "Margrave Gautier",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
+  "rufus_blaiddyd": {
+    "display": "Rufus Blaiddyd",
+    "origin": "Three Hopes Extra",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Blonde"
+    ]
+  },
   "abel": {
     "display": "Abel",
     "origin": "Shadow Dragon / New Mystery",
@@ -424,6 +523,15 @@ let library = {
       "Red / Orange"
     ]
   },
+  "annette_hopes": {
+    "display": "Annette",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
   "annette_war": {
     "display": "Annette",
     "origin": "Three Houses",
@@ -653,6 +761,17 @@ let library = {
     ]
   },
   "ashe_academy": {
+    "display": "Ashe",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Archers"
+    ],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+  "ashe_hopes": {
     "display": "Ashe",
     "origin": "Three Houses",
     "sex": "Male",
@@ -916,6 +1035,15 @@ let library = {
       "Black"
     ]
   },
+  "balthus_hopes": {
+    "display": "Balthus",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Black"
+    ]
+  },
   "balthus_war": {
     "display": "Balthus",
     "origin": "Three Houses",
@@ -1121,6 +1249,17 @@ let library = {
     ]
   },
   "bernadetta_academy": {
+    "display": "Bernadetta",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Archers"
+    ],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "bernadetta_hopes": {
     "display": "Bernadetta",
     "origin": "Three Houses",
     "sex": "Female",
@@ -1773,6 +1912,15 @@ let library = {
       "Blue"
     ]
   },
+  "caspar_hopes": {
+    "display": "Caspar",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Blue"
+    ]
+  },
   "caspar_war": {
     "display": "Caspar",
     "origin": "Three Houses",
@@ -2144,6 +2292,18 @@ let library = {
       "Brown"
     ]
   },
+  "claude_hopes": {
+    "display": "Claude",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Lords",
+      "Archers"
+    ],
+    "hair": [
+      "Brown"
+    ]
+  },
   "claude_war": {
     "display": "Claude",
     "origin": "Three Houses",
@@ -2233,6 +2393,15 @@ let library = {
     ]
   },
   "constance_academy": {
+    "display": "Constance",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Blonde"
+    ]
+  },
+  "constance_hopes": {
     "display": "Constance",
     "origin": "Three Houses",
     "sex": "Female",
@@ -2609,6 +2778,15 @@ let library = {
       "White / Gray"
     ]
   },
+  "dedue_hopes": {
+    "display": "Dedue",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "White / Gray"
+    ]
+  },
   "dedue_war": {
     "display": "Dedue",
     "origin": "Three Houses",
@@ -2812,6 +2990,17 @@ let library = {
       "Blonde"
     ]
   },
+  "dimitri_hopes": {
+    "display": "Dimitri",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Lords"
+    ],
+    "hair": [
+      "Blonde"
+    ]
+  },
   "dimitri_war": {
     "display": "Dimitri",
     "origin": "Three Houses",
@@ -2891,6 +3080,17 @@ let library = {
     ]
   },
   "dorothea_academy": {
+    "display": "Dorothea",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Refreshers"
+    ],
+    "hair": [
+      "Brown"
+    ]
+  },
+  "dorothea_hopes": {
     "display": "Dorothea",
     "origin": "Three Houses",
     "sex": "Female",
@@ -3103,6 +3303,17 @@ let library = {
     ]
   },
   "edelgard_academy": {
+    "display": "Edelgard",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Lords"
+    ],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+  "edelgard_hopes": {
     "display": "Edelgard",
     "origin": "Three Houses",
     "sex": "Female",
@@ -3782,6 +3993,17 @@ let library = {
       "Blue"
     ]
   },
+  "felix_hopes": {
+    "display": "Felix",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Myrmidons"
+    ],
+    "hair": [
+      "Blue"
+    ]
+  },
   "felix_war": {
     "display": "Felix",
     "origin": "Three Houses",
@@ -3812,6 +4034,15 @@ let library = {
     ]
   },
   "ferdinand_academy": {
+    "display": "Ferdinand",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
+  "ferdinand_hopes": {
     "display": "Ferdinand",
     "origin": "Three Houses",
     "sex": "Male",
@@ -4856,6 +5087,15 @@ let library = {
       "Red / Orange"
     ]
   },
+  "hapi_hopes": {
+    "display": "Hapi",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
   "hapi_war": {
     "display": "Hapi",
     "origin": "Three Houses",
@@ -5105,6 +5345,15 @@ let library = {
       "Pink"
     ]
   },
+  "hilda_3h_hopes": {
+    "display": "Hilda (3H)",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Pink"
+    ]
+  },
   "hilda_3h_war": {
     "display": "Hilda (3H)",
     "origin": "Three Houses",
@@ -5302,6 +5551,15 @@ let library = {
       "Black"
     ]
   },
+  "hubert_hopes": {
+    "display": "Hubert",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Black"
+    ]
+  },
   "hubert_war": {
     "display": "Hubert",
     "origin": "Three Houses",
@@ -5393,6 +5651,17 @@ let library = {
     ]
   },
   "ignatz_academy": {
+    "display": "Ignatz",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Archers"
+    ],
+    "hair": [
+      "Blonde"
+    ]
+  },
+  "ignatz_hopes": {
     "display": "Ignatz",
     "origin": "Three Houses",
     "sex": "Male",
@@ -5495,6 +5764,17 @@ let library = {
     ]
   },
   "ingrid_academy": {
+    "display": "Ingrid",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Pegasus Knights"
+    ],
+    "hair": [
+      "Blonde"
+    ]
+  },
+  "ingrid_hopes": {
     "display": "Ingrid",
     "origin": "Three Houses",
     "sex": "Female",
@@ -6972,6 +7252,17 @@ let library = {
       "Red / Orange"
     ]
   },
+  "leonie_hopes": {
+    "display": "Leonie",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Archers"
+    ],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
   "leonie_war": {
     "display": "Leonie",
     "origin": "Three Houses",
@@ -7176,6 +7467,17 @@ let library = {
     ]
   },
   "linhardt_academy": {
+    "display": "Linhardt",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [
+      "Healers"
+    ],
+    "hair": [
+      "Green"
+    ]
+  },
+  "linhardt_hopes": {
     "display": "Linhardt",
     "origin": "Three Houses",
     "sex": "Male",
@@ -7401,6 +7703,15 @@ let library = {
     ]
   },
   "lorenz_3h_academy": {
+    "display": "Lorenz (3H)",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "lorenz_3h_hopes": {
     "display": "Lorenz (3H)",
     "origin": "Three Houses",
     "sex": "Male",
@@ -7691,6 +8002,15 @@ let library = {
       "White / Gray"
     ]
   },
+  "lysithea_hopes": {
+    "display": "Lysithea",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "White / Gray"
+    ]
+  },
   "lysithea_war": {
     "display": "Lysithea",
     "origin": "Three Houses",
@@ -7915,6 +8235,17 @@ let library = {
     ]
   },
   "marianne_academy": {
+    "display": "Marianne",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Healers"
+    ],
+    "hair": [
+      "Blue"
+    ]
+  },
+  "marianne_hopes": {
     "display": "Marianne",
     "origin": "Three Houses",
     "sex": "Female",
@@ -8163,6 +8494,17 @@ let library = {
     ]
   },
   "mercedes_academy": {
+    "display": "Mercedes",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [
+      "Healers"
+    ],
+    "hair": [
+      "Blonde"
+    ]
+  },
+  "mercedes_hopes": {
     "display": "Mercedes",
     "origin": "Three Houses",
     "sex": "Female",
@@ -8460,9 +8802,18 @@ let library = {
     "class": [],
     "hair": []
   },
-  "monica": {
+  "monica_academy": {
     "display": "Monica",
-    "origin": "Three Houses Extra",
+    "origin": "Three Hopes",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
+  "monica_hopes": {
+    "display": "Monica",
+    "origin": "Three Hopes",
     "sex": "Female",
     "class": [],
     "hair": [
@@ -9669,6 +10020,15 @@ let library = {
       "Purple"
     ]
   },
+  "petra_hopes": {
+    "display": "Petra",
+    "origin": "Three Houses",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
   "petra_war": {
     "display": "Petra",
     "origin": "Three Houses",
@@ -9959,6 +10319,15 @@ let library = {
     ]
   },
   "raphael_academy": {
+    "display": "Raphael",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Blonde"
+    ]
+  },
+  "raphael_hopes": {
     "display": "Raphael",
     "origin": "Three Houses",
     "sex": "Male",
@@ -11793,6 +12162,15 @@ let library = {
       "Red / Orange"
     ]
   },
+  "sylvain_hopes": {
+    "display": "Sylvain",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
   "sylvain_war": {
     "display": "Sylvain",
     "origin": "Three Houses",
@@ -13034,6 +13412,15 @@ let library = {
     ]
   },
   "yuri_academy": {
+    "display": "Yuri",
+    "origin": "Three Houses",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Purple"
+    ]
+  },
+  "yuri_hopes": {
     "display": "Yuri",
     "origin": "Three Houses",
     "sex": "Male",
