@@ -48,7 +48,7 @@ let library = {
     "display": "Shez (M)",
     "origin": "Three Hopes",
     "sex": "Male",
-    "class": [],
+    "class": ["Lords"],
     "hair": [
       "Purple"
     ]
@@ -57,7 +57,7 @@ let library = {
     "display": "Shez (F)",
     "origin": "Three Hopes",
     "sex": "Female",
-    "class": [],
+    "class": ["Lords"],
     "hair": [
       "Purple"
     ]
