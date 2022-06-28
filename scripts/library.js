@@ -8,6 +8,15 @@ let library = {
       "Purple"
     ]
   },
+  "kiran": {
+    "display": "Kiran",
+    "origin": "Heroes",
+    "sex": "Other",
+    "class": ["Avatars"],
+    "hair": [
+
+    ]
+  },
   "count_gloucester": {
     "display": "Count Gloucester",
     "origin": "Three Hopes Extra",
@@ -48,7 +57,7 @@ let library = {
     "display": "Shez (M)",
     "origin": "Three Hopes",
     "sex": "Male",
-    "class": ["Lords"],
+    "class": ["Lords", "Avatars"],
     "hair": [
       "Purple"
     ]
@@ -57,7 +66,7 @@ let library = {
     "display": "Shez (F)",
     "origin": "Three Hopes",
     "sex": "Female",
-    "class": ["Lords"],
+    "class": ["Lords", "Avatars"],
     "hair": [
       "Purple"
     ]
@@ -1661,7 +1670,7 @@ let library = {
     "origin": "Three Houses",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "Blue"
@@ -1672,7 +1681,7 @@ let library = {
     "origin": "Three Houses",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "Green"
@@ -1683,7 +1692,7 @@ let library = {
     "origin": "Three Houses",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "Blue"
@@ -1694,7 +1703,7 @@ let library = {
     "origin": "Three Houses",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "Green"
@@ -2488,7 +2497,7 @@ let library = {
     "sex": "Female",
     "class": [
       "Lords",
-      "Shapeshifters"
+      "Shapeshifters", "Avatars"
     ],
     "hair": [
       "White / Gray"
@@ -2500,7 +2509,7 @@ let library = {
     "sex": "Male",
     "class": [
       "Lords",
-      "Shapeshifters"
+      "Shapeshifters", "Avatars"
     ],
     "hair": [
       "White / Gray"
@@ -6710,7 +6719,7 @@ let library = {
     "display": "Kris (F)",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Female",
-    "class": [],
+    "class": ["Avatars"],
     "hair": [
       "Blue"
     ]
@@ -6719,7 +6728,7 @@ let library = {
     "display": "Kris (M)",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Avatars"],
     "hair": [
       "Blue"
     ]
@@ -10730,7 +10739,7 @@ let library = {
     "origin": "Awakening",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "White / Gray"
@@ -10741,7 +10750,7 @@ let library = {
     "origin": "Awakening",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords", "Avatars"
     ],
     "hair": [
       "White / Gray"
