@@ -28,7 +28,7 @@
   },
   "holst": {
     "display": "Holst",
-    "origin": "Three Hopes Extra",
+    "origin": "Three Hopes",
     "sex": "Male",
     "class": [],
     "hair": [
@@ -10773,7 +10773,7 @@
   },
   "rodrigue": {
     "display": "Rodrigue",
-    "origin": "Three Houses Extra",
+    "origin": "Three Houses",
     "sex": "Male",
     "class": [],
     "hair": [
