@@ -53,6 +53,7 @@ const filtersArr = [
   "Myrmidons",
   "Shapeshifters",
   "Wyvern Riders",
+  "Armor Knights",
   "Red / Orange",
   "Pink",
   "Blue",

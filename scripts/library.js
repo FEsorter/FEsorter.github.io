@@ -1,4 +1,4 @@
-let library = {
+ let library = {
   "count_varley": {
     "display": "Count Varley",
     "origin": "Three Hopes Extra",
@@ -387,7 +387,7 @@ let library = {
     "display": "Amelia",
     "origin": "Sacred Stones",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -601,7 +601,7 @@ let library = {
     "display": "Arden",
     "origin": "Genealogy of the Holy War",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -610,7 +610,7 @@ let library = {
     "display": "Ardoome",
     "origin": "Dark Lord and the Maiden of Light",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -1122,7 +1122,7 @@ let library = {
     "display": "Barthe",
     "origin": "Binding Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -1234,7 +1234,7 @@ let library = {
     "display": "Benny",
     "origin": "Fates",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -1344,7 +1344,8 @@ let library = {
     "origin": "Code of the Burger King",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": []
   },
@@ -1352,14 +1353,14 @@ let library = {
     "display": "Black Knight",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": []
   },
   "black_knight_rd": {
     "display": "Black Knight",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": []
   },
   "blaine_king": {
@@ -1375,7 +1376,7 @@ let library = {
     "display": "Blair",
     "origin": "Dark Lord and the Maiden of Light",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -1449,7 +1450,7 @@ let library = {
     "display": "Bors",
     "origin": "Binding Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -1458,7 +1459,7 @@ let library = {
     "display": "Bors (CotBK)",
     "origin": "Code of the Burger King",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -1597,7 +1598,7 @@ let library = {
     "display": "Brom",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -1644,7 +1645,7 @@ let library = {
     "display": "Bryce",
     "origin": "Path of Radiance / Radiant Dawn Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Red / Orange"
     ]
@@ -1722,7 +1723,7 @@ let library = {
     "display": "Byron (TLP)",
     "origin": "The Last Promise Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -2070,7 +2071,7 @@ let library = {
     "display": "Cervantes",
     "origin": "Awakening Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Bald"
     ]
@@ -2186,7 +2187,7 @@ let library = {
     "display": "Chungis",
     "origin": "Code of the Burger King",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -2232,7 +2233,8 @@ let library = {
     "origin": "Four Kings",
     "sex": "Female",
     "class": [
-      "Archers"
+      "Archers",
+      "Armor Knights"
     ],
     "hair": [
       "Blonde"
@@ -2631,7 +2633,7 @@ let library = {
     "display": "Dalsin",
     "origin": "Thracia 776",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -2800,7 +2802,7 @@ let library = {
     "display": "Dedue",
     "origin": "Three Houses",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -3036,7 +3038,7 @@ let library = {
     "display": "Dolph",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Bald"
     ]
@@ -3156,7 +3158,7 @@ let library = {
     "display": "Douglas",
     "origin": "Binding Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -3174,7 +3176,7 @@ let library = {
     "display": "Dracul",
     "origin": "Dark Lord and the Maiden of Light",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -3190,7 +3192,7 @@ let library = {
     "display": "Draug",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -3316,7 +3318,8 @@ let library = {
     "origin": "Three Houses",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "White / Gray"
@@ -3327,7 +3330,8 @@ let library = {
     "origin": "Three Houses",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "White / Gray"
@@ -3338,7 +3342,8 @@ let library = {
     "origin": "Three Houses",
     "sex": "Female",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "White / Gray"
@@ -3368,7 +3373,7 @@ let library = {
     "display": "Effie",
     "origin": "Fates",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -3613,7 +3618,7 @@ let library = {
     "display": "Emily",
     "origin": "Four Kings",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Red / Orange"
     ]
@@ -3879,7 +3884,7 @@ let library = {
     "display": "Fado",
     "origin": "Sacred Stones Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -4091,7 +4096,7 @@ let library = {
     "display": "Festan",
     "origin": "Vision Quest",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Black"
     ]
@@ -4261,7 +4266,7 @@ let library = {
     "display": "Forsyth",
     "origin": "Shadows of Valentia",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -4320,7 +4325,7 @@ let library = {
     "display": "Frederick (TLP)",
     "origin": "The Last Promise",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Green"
     ]
@@ -4566,7 +4571,7 @@ let library = {
     "display": "Gatrie",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -4575,7 +4580,7 @@ let library = {
     "display": "Gatrie",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -4729,7 +4734,7 @@ let library = {
     "display": "Gilbert",
     "origin": "Three Houses",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Red / Orange"
     ]
@@ -4738,7 +4743,7 @@ let library = {
     "display": "Gilliam",
     "origin": "Sacred Stones",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Black"
     ]
@@ -4812,7 +4817,7 @@ let library = {
     "display": "Gradin",
     "origin": "Vision Quest",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -4873,7 +4878,7 @@ let library = {
     "display": "Grimace",
     "origin": "Code of the Burger King Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Purple"
     ]
@@ -4979,7 +4984,7 @@ let library = {
     "display": "Gwendolyn",
     "origin": "Binding Blade",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Pink"
     ]
@@ -5073,7 +5078,7 @@ let library = {
     "display": "Hannibal",
     "origin": "Genealogy of the Holy War",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -5219,7 +5224,7 @@ let library = {
     "display": "Hector",
     "origin": "Binding Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -5229,7 +5234,8 @@ let library = {
     "origin": "Blazing Blade",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "Blue"
@@ -5429,7 +5435,7 @@ let library = {
     "display": "Hoff",
     "origin": "Four Kings",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -5449,7 +5455,7 @@ let library = {
     "display": "Hollace",
     "origin": "Vision Quest",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Pink"
     ]
@@ -5501,7 +5507,7 @@ let library = {
     "display": "Horace",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -5654,7 +5660,7 @@ let library = {
     "display": "Ignatius",
     "origin": "Fates",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -6531,7 +6537,7 @@ let library = {
     "display": "Kellam",
     "origin": "Awakening",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Black"
     ]
@@ -6578,7 +6584,7 @@ let library = {
     "display": "Kevin",
     "origin": "The Last Promise",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -6614,7 +6620,7 @@ let library = {
     "display": "Kir",
     "origin": "Vision Quest",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Bald"
     ]
@@ -6663,7 +6669,7 @@ let library = {
     "display": "Kjelle",
     "origin": "Awakening",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Black"
     ]
@@ -6945,7 +6951,7 @@ let library = {
     "display": "Lang",
     "origin": "Shadow Dragon / New Mystery Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -6954,7 +6960,7 @@ let library = {
     "display": "Lanmark",
     "origin": "The Last Promise",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -7003,7 +7009,7 @@ let library = {
     "display": "Larisa",
     "origin": "Vision Quest",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -7114,7 +7120,7 @@ let library = {
     "display": "Legance",
     "origin": "Binding Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -7742,7 +7748,7 @@ let library = {
     "display": "Lorenz (SD/NM)",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -7889,7 +7895,7 @@ let library = {
     "display": "Lukas",
     "origin": "Shadows of Valentia",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Red / Orange"
     ]
@@ -7907,7 +7913,7 @@ let library = {
     "display": "Lundgren",
     "origin": "Blazing Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -8051,7 +8057,7 @@ let library = {
     "display": "Macellan",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Bald"
     ]
@@ -8138,7 +8144,7 @@ let library = {
     "display": "Mamori",
     "origin": "TMS#FE",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -8432,7 +8438,7 @@ let library = {
     "display": "Maximillian",
     "origin": "Dark Lord and the Maiden of Light",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": []
   },
   "maxwell": {
@@ -8477,7 +8483,7 @@ let library = {
     "display": "Meg",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -8670,7 +8676,7 @@ let library = {
     "display": "Miklan",
     "origin": "Three Houses Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Red / Orange"
     ]
@@ -8969,7 +8975,7 @@ let library = {
     "display": "Murdock",
     "origin": "Binding Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -8978,7 +8984,7 @@ let library = {
     "display": "Murdock",
     "origin": "Blazing Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -8996,7 +9002,7 @@ let library = {
     "display": "Musis",
     "origin": "Dark Lord and the Maiden of Light Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -9792,7 +9798,7 @@ let library = {
     "display": "Oswin",
     "origin": "Blazing Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -10593,7 +10599,7 @@ let library = {
     "display": "Rhiner",
     "origin": "Four Kings",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -10707,7 +10713,7 @@ let library = {
     "display": "Roartz",
     "origin": "Binding Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
@@ -10778,7 +10784,7 @@ let library = {
     "display": "Roger",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Pink"
     ]
@@ -11532,7 +11538,8 @@ let library = {
     "origin": "Code of the Burger King",
     "sex": "Male",
     "class": [
-      "Healers"
+      "Healers",
+      "Armor Knights"
     ],
     "hair": [
       "Blue"
@@ -11551,7 +11558,7 @@ let library = {
     "display": "Sheena",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -11822,7 +11829,7 @@ let library = {
     "display": "Sjohstrom",
     "origin": "Vision Quest Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -12335,7 +12342,7 @@ let library = {
     "display": "Tauroneo",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -12344,7 +12351,7 @@ let library = {
     "display": "Tauroneo",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -12589,8 +12596,8 @@ let library = {
   "tirado": {
     "display": "Tirado",
     "origin": "Sacred Stones Extra",
-    "sex": "?",
-    "class": [],
+    "sex": "Male",
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -12618,7 +12625,8 @@ let library = {
     "origin": "Vision Quest",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "Blonde"
@@ -12831,7 +12839,7 @@ let library = {
     "display": "Uther",
     "origin": "Blazing Blade Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -12871,7 +12879,7 @@ let library = {
     "display": "Valbar",
     "origin": "Shadows of Valentia",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -12974,7 +12982,7 @@ let library = {
     "display": "Vigarde",
     "origin": "Sacred Stones Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Purple"
     ]
@@ -13113,7 +13121,7 @@ let library = {
     "display": "Wallace",
     "origin": "Blazing Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Bald"
     ]
@@ -13123,7 +13131,8 @@ let library = {
     "origin": "Four Kings",
     "sex": "Male",
     "class": [
-      "Lords"
+      "Lords",
+      "Armor Knights"
     ],
     "hair": [
       "Green"
@@ -13237,7 +13246,7 @@ let library = {
     "display": "Wren",
     "origin": "Dark Lord and the Maiden of Light",
     "sex": "Female",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -13277,7 +13286,7 @@ let library = {
     "display": "Xavier",
     "origin": "Thracia 776",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Brown"
     ]
@@ -13545,7 +13554,7 @@ let library = {
     "display": "Zelgius",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -13554,7 +13563,7 @@ let library = {
     "display": "Zelgius",
     "origin": "Path of Radiance / Radiant Dawn",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blue"
     ]
@@ -13572,7 +13581,7 @@ let library = {
     "display": "Zephiel",
     "origin": "Binding Blade",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "Blonde"
     ]
