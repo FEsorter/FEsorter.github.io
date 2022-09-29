@@ -2784,7 +2784,7 @@
     "display": "Dedue",
     "origin": "Three Houses",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
@@ -2793,7 +2793,7 @@
     "display": "Dedue",
     "origin": "Three Houses",
     "sex": "Male",
-    "class": [],
+    "class": ["Armor Knights"],
     "hair": [
       "White / Gray"
     ]
