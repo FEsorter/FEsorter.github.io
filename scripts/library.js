@@ -269,6 +269,44 @@
       "Blue"
     ]
   },
+
+    "askr": {
+    "display": "Askr",
+    "origin": "Heroes",
+    "sex": "Male",
+    "class": ["Black"],
+    "hair": [
+      "Blue"
+    ]
+  },
+
+    "ymir_feh": {
+    "display": "Ymir (FEH)",
+    "origin": "Heroes",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Blonde"
+    ]
+  },
+
+    "embla": {
+    "display": "Embla",
+    "origin": "Heroes",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+    "Ganglot": {
+    "display": "Ganglot",
+    "origin": "Heroes",
+    "sex": "Female",
+    "class": [],
+    "hair": []
+  },
   "alice_cipher": {
     "display": "Alice (Cipher)",
     "origin": "Cipher",
@@ -13362,8 +13400,8 @@
       "White / Gray"
     ]
   },
-  "ymir": {
-    "display": "Ymir",
+  "ymir_sd": {
+    "display": "Ymir (SD / NM)",
     "origin": "Shadow Dragon / New Mystery",
     "sex": "Male",
     "class": [],
