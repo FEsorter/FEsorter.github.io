@@ -300,7 +300,7 @@
     ]
   },
 
-    "Ganglot": {
+    "ganglot": {
     "display": "Ganglot",
     "origin": "Heroes",
     "sex": "Female",
