@@ -30,7 +30,7 @@
     "display": "Holst",
     "origin": "Three Hopes",
     "sex": "Male",
-    "class": [],
+    "class": ["Myrmidons"],
     "hair": [
       "Pink"
     ]
@@ -84,7 +84,7 @@
     "display": "Shahid",
     "origin": "Three Hopes Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Wyvern Riders"],
     "hair": [
       "Brown"
     ]
@@ -9107,11 +9107,13 @@
     "display": "Nader",
     "origin": "Three Houses Extra",
     "sex": "Male",
-    "class": [],
+    "class": ["Wyvern Riders"],
     "hair": [
       "Black"
     ]
   },
+
+
   "naesala_por": {
     "display": "Naesala",
     "origin": "Path of Radiance / Radiant Dawn",
