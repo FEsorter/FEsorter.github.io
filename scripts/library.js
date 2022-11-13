@@ -9109,7 +9109,7 @@
     "sex": "Male",
     "class": ["Wyvern Riders"],
     "hair": [
-      "Black"
+      "Brown"
     ]
   },
 
