@@ -25,6 +25,7 @@ const titlesArr = [
   'Three Hopes Extra',
   'TMS#FE',
   'TMS#FE Extra',
+  'Engage',
   'Warriors',
   'Heroes',
   'Cipher'
