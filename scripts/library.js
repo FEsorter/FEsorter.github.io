@@ -1,6 +1,30 @@
  let library = {
 
 
+   "jean": {
+     "display": "Jean",
+     "origin": "Engage",
+     "sex": "Male",
+     "class": [],
+     "hair": ["Black"]
+   },
+
+   "lindon": {
+     "display": "Lindon",
+     "origin": "Engage",
+     "sex": "Male",
+     "class": [],
+     "hair": ["White / Gray"]
+   },
+
+
+   "saphir": {
+     "display": "Saphir",
+     "origin": "Engage",
+     "sex": "Female",
+     "class": ["Armor Knights"],
+     "hair": ["White / Gray"]
+   },
 
    "seior": {
      "display": "Seiðr",
