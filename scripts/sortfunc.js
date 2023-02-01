@@ -1,3 +1,5 @@
+
+
 let lstMember = []
 let parent = []
 let equal = []
@@ -25,6 +27,8 @@ let back_lstMember = []
 let back_parent = []
 let back_equal = []
 let back_rec = []
+
+let final_rank = [];
 
 
 function resume(){
@@ -290,6 +294,7 @@ function showResult() {
     str += "<tr><td id= \"rightHeader\"> Rank <\/td><td id= \"leftHeader\">Character<\/td><\/tr>";
 
     for (i = 0; i < charlist.length; i++) {
+        final_rank.push(ranking)
         str += "<tr><td id= \"rightCol\">" + ranking + "<\/td><td id= \"leftCol\" style=\"background:url(\'./portraits/" + charlist[lstMember[0][i]] + ".png\') 3% center/75px 75px no-repeat !important; margin-left:3px;\">" + library[charlist[lstMember[0][i]]].display + "<\/td><\/tr>";
         resultstr += `${ranking}: ${library[charlist[lstMember[0][i]]].display}\n`
         if (i < charlist.length - 1) {
@@ -368,7 +373,6 @@ async function draw() {
     }
 }
 
-
 async function drawPortraits() {
 
     let canvas = document.getElementById('topTen');
@@ -386,6 +390,18 @@ async function drawPortraits() {
 
         if (title.includes('Extra')) {
             title = title.substring(0, title.length - 6)
+        }
+
+        let rank = new Image();
+        rank.src = `./other_assets/numbers/${final_rank[i]}.png`
+        console.log(final_rank[i])
+        rank.onload = async function() {
+            if (final_rank[i] == 1|| final_rank[i] == 2 || final_rank[i] == 3) {
+                await ctx.drawImage(rank, -12, 150 + (i * 250) - 100, 200, 200);
+            } 
+            else {
+                await ctx.drawImage(rank, 88 - (rank.width / 2), 150 + (i * 250) - (rank.height/ 2), rank.width, rank.height);
+            }
         }
 
         let portrait = new Image();
