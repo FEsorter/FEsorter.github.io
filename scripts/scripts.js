@@ -150,17 +150,17 @@ function removeDoubles() {
     }
     let sel = document.getElementById(`dupe${i}`).options
     let indexToKeep = document.getElementById(`dupe${i}`).selectedIndex
-    console.log(sel)
-    console.log(indexToKeep)
+
+ 
     let len = sel.length
-    console.log(len)
+
     for (let j = 0; j < len; j++) {
       if (j != indexToKeep && charlist.includes(sel[j].value)) {
-        console.log(`value to remove: ` + sel[j].value)
+        
         charlist.splice(charlist.indexOf(sel[j].value), 1)
-      } else if (j == indexToKeep) {
-        charlist.push(sel[j].value)
-      }
+        charlist.push(sel[indexToKeep].value)
+      } 
+
     }
   }
 }

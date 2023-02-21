@@ -10837,7 +10837,8 @@ let library = {
     "portrait": "",
     "sex": "Female",
     "class": [
-      "Avatars"
+      "Avatars",
+      "Lords"
     ],
     "hair": [
       "Blue"
@@ -10853,7 +10854,8 @@ let library = {
     "portrait": "",
     "sex": "Male",
     "class": [
-      "Avatars"
+      "Avatars",
+      "Lords"
     ],
     "hair": [
       "Blue"
