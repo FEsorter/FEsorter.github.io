@@ -67,16 +67,24 @@ let music = {
     cover: "3h.png",
     filepath: "sunrise.mp3"
   },
-  14: {
+
+    14: {
+    title: "Silver-White Heart",
+    cover: "engage.png",
+    filepath: "heart.mp3"
+  },
+
+  15: {
     title: "Under the Moon (Instrumental)",
     cover: "TMS.png",
     filepath: "moon.mp3"
   },
-  15: {
+  16: {
     title: "Winds of Askr",
     cover: "feh.png",
     filepath: "askr.mp3"
-  }
+  },
+
 }
 
 function toggle() {
@@ -94,7 +102,7 @@ function toggle() {
 
 function setMusic(load) {
   if (load) {
-    music_index = Math.floor(Math.random() * 15) + 1;
+    music_index = Math.floor(Math.random() * 16) + 1;
   }
   let track = music[music_index];
   document.getElementById("cover").src = "covers/" + track.cover;
@@ -105,9 +113,9 @@ function setMusic(load) {
 
 function changeSong(next) {
   if (next) {
-    music_index == 15 ? music_index = 1 : music_index++;
+    music_index == 16 ? music_index = 1 : music_index++;
   } else {
-    music_index == 1 ? music_index = 15 : music_index--;
+    music_index == 1 ? music_index = 16 : music_index--;
   }
   document.getElementById("bg_music").pause()
   document.getElementById("toggle").src = "buttons/play.png";

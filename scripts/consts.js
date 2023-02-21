@@ -41,6 +41,8 @@ const romhacksArr = [
   "Code of the Burger King Extra",
   "Dark Lord and the Maiden of Light",
   "Dark Lord and the Maiden of Light Extra",
+  "Shackled Power",
+  "Shackled Power Extra",
 ]
 const filtersArr = [
   "Male",
@@ -148,5 +150,7 @@ const spoilerRemove = [
 ]
 const otherGamesArr = [
   "Triangle Strategy",
-  "Triangle Strategy Extra"
+  "Triangle Strategy Extra",
+  "Dark Deity",
+  "Dark Deity Extra",
 ]

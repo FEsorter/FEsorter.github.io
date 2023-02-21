@@ -58,7 +58,9 @@ font-size: 12px;
     background-repeat: no-repeat;
 }
 
-
+.content select {
+    margin-left: 5px;
+}
 
 
 
@@ -204,6 +206,18 @@ font-size: 12px;
     padding-bottom: 10px;
     font-family: FEH;
 }
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    
+}
+
+#testHeader {
+    font-size: 12px;
+    text-align: center;
+}
+
 
 .collapsible {
     background-color: transparent;
@@ -400,7 +414,7 @@ font-size: 12px;
     display: block;
     text-align: center top;
     transform: translateX(100%);
-    animation: scroll-left 7s linear infinite;
+    animation: scroll-left 12s linear infinite;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 

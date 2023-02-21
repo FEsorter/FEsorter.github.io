@@ -1,4 +1,5 @@
 let charlist = []
+let games = []
 
 function shuffle(array) {
   let currentIndex = array.length,
@@ -29,12 +30,12 @@ function uncheckFilters() {
     let cbox = document.getElementById('filter' + i);
     cbox.checked = false;
   }
-  let cbox = document.getElementById('3hportrait2')
-  cbox.checked = false;
-  cbox = document.getElementById('3hportrait3')
-  cbox.checked = false;
-  cbox = document.getElementById('tellius1')
-  cbox.checked = false;
+  document.getElementById('wwings1').checked = false;
+  document.getElementById('fe6').checked = false;
+  document.getElementById('fe7').checked = false;
+  document.getElementById('3hportrait2').checked = false;
+  document.getElementById('3hportrait3').checked = false;
+  document.getElementById('tellius1').checked = false;
 }
 
 function startup() {
@@ -47,6 +48,9 @@ function startup() {
   document.getElementById('resultcontainer').style.display = 'none';
   this.selectAllRomhack()
   this.selectAllOther()
+  for (let i = 1; i < 25; i++) {
+    document.getElementById(`dupeC${i}`).checked = false;
+  }
 }
 
 function selectAllMainline() {
@@ -56,8 +60,10 @@ function selectAllMainline() {
 }
 
 function reset() {
-  window.location.reload();
-  window.localStorage.clear()
+  if (window.confirm("Do you want to start over? Your saved progress will be deleted.")) {
+    window.location.reload();
+    window.localStorage.clear()
+  }
 }
 
 function selectAll(id, arr, option) {
@@ -85,18 +91,18 @@ function selectAllOther() {
   }
 }
 
-function portraitChoice(id1, id2) {
+function portraitChoice(id1, id2, id3) {
   let cbox1 = document.getElementById(id1)
+  if (cbox1.checked == false) {
+    cbox1.checked = true
+    return;
+  }
   let cbox2 = document.getElementById(id2)
   cbox2.checked = !cbox1.checked;
-}
-
-function triplePortraitChoice(id1, id2, id3) {
-  let cbox1 = document.getElementById(id1)
-  let cbox2 = document.getElementById(id2)
-  let cbox3 = document.getElementById(id3)
-  cbox2.checked = !cbox1.checked;
-  cbox3.checked = cbox2.checked
+  if (id3 != undefined) {
+    let cbox3 = document.getElementById(id3)
+    cbox3.checked = cbox2.checked
+  }
 }
 
 function hideAll() {
@@ -104,21 +110,27 @@ function hideAll() {
   document.getElementById('resumeButton').style.display = 'none';
 }
 async function initialize() {
+  if (window.localStorage['charlist']) {
+    if (!window.confirm('Saved progress detected. Are you sure you want to start over?')) {
+      return;
+    }
+  }
   charlist = [];
   let keys = await Object.keys(library)
   for (let i = 0; i < titlesArr.length; i++) {
     if (document.getElementById(`option${i}`).checked) {
-      charlist = charlist.concat(keys.filter(key => library[key].origin == titlesArr[i]))
+      games.push(titlesArr[i])
+      charlist = charlist.concat(keys.filter(key => library[key].origin.includes(titlesArr[i])))
     }
   }
   for (let i = 0; i < romhacksArr.length; i++) {
     if (document.getElementById(`romhack${i}`).checked) {
-      charlist = charlist.concat(keys.filter(key => library[key].origin == romhacksArr[i]))
+      charlist = charlist.concat(keys.filter(key => library[key].origin.includes(romhacksArr[i])))
     }
   }
   for (let i = 0; i < otherGamesArr.length; i++) {
     if (document.getElementById(`other${i}`).checked) {
-      charlist = charlist.concat(keys.filter(key => library[key].origin == otherGamesArr[i]))
+      charlist = charlist.concat(keys.filter(key => library[key].origin.includes(otherGamesArr[i])))
     }
   }
   this.applyFilters();
@@ -131,58 +143,69 @@ async function initialize() {
   document.getElementById('fldMiddleB').setAttribute("onClick", "undo()");
 }
 
-function removeDoubles(keep, remove) {
-  if (charlist.includes(keep) && charlist.includes(remove)) {
-    charlist.splice(charlist.indexOf(remove), 1)
-  }
-}
-
-function portraitFilter(suffix) {
-  for (let i = 0; i < charlist.length; i++) {
-    if (charlist[i].includes(suffix)) {
-      charlist.splice(i, 1);
-      i--;
+function removeDoubles() {
+  for (let i = 1; i < 25; i++) {
+    if (!document.getElementById(`dupeC${i}`).checked) {
+      continue;
+    }
+    let sel = document.getElementById(`dupe${i}`).options
+    let indexToKeep = document.getElementById(`dupe${i}`).selectedIndex
+    console.log(sel)
+    console.log(indexToKeep)
+    let len = sel.length
+    console.log(len)
+    for (let j = 0; j < len; j++) {
+      if (j != indexToKeep && charlist.includes(sel[j].value)) {
+        console.log(`value to remove: ` + sel[j].value)
+        charlist.splice(charlist.indexOf(sel[j].value), 1)
+      } else if (j == indexToKeep) {
+        charlist.push(sel[j].value)
+      }
     }
   }
 }
 
-function THfilter() {
-  chars = []
+function portraitTagSelect(tag) {
   for (let i = 0; i < charlist.length; i++) {
-    if (charlist[i].includes('_war') || charlist[i].includes('_hopes') || charlist[i].includes('_academy')) {
-      chars.push(charlist[i].slice(0, charlist[i].lastIndexOf('_')));
+    if (library[charlist[i]].tags.includes(tag)) {
+      library[charlist[i]].portrait = tag;
     }
   }
-  chars = [...new Set(chars)];
-  for (let i = 0; i < chars.length; i++) {
-    if (document.getElementById('3hportrait1').checked) {
-      this.removeDoubles(`${chars[i]}_academy`, `${chars[i]}_war`)
-      this.removeDoubles(`${chars[i]}_academy`, `${chars[i]}_hopes`)
-    }
-    if (document.getElementById('3hportrait2').checked) {
-      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_academy`)
-      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_hopes`)
-      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_academy`)
-    }
-    if (document.getElementById('3hportrait3').checked) {
-      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_academy`)
-      this.removeDoubles(`${chars[i]}_hopes`, `${chars[i]}_war`)
-      this.removeDoubles(`${chars[i]}_war`, `${chars[i]}_academy`)
-    }
+}
+
+function defaultPortraits() {
+  if (games.includes('Binding Blade') && !games.includes('Blazing Blade')) {
+    this.portraitTagSelect('fe6')
+  }
+  if (games.includes('Blazing Blade') && !games.includes('Binding Blade')) {
+    this.portraitTagSelect('fe7')
   }
 }
 
 function applyFilters() {
-  for (let i = 0; i < doublesRemove.length; i++) {
-    this.removeDoubles(doublesKeep[i], doublesRemove[i])
+  if (games.includes('Genealogy of the Holy War') && !games.includes('Thracia 776')) {
+    this.portraitTagSelect('fe4')
   }
-  if (document.getElementById('dupes').checked) {
-    for (let i = 0; i < spoilerRemove.length; i++) {
-      this.removeDoubles(spoilerKeep[i], spoilerRemove[i])
-    }
+  document.getElementById('tellius1').checked ? this.portraitTagSelect('por') : this.portraitTagSelect('rd')
+  document.getElementById('wwings1').checked ? this.portraitTagSelect('fe1') : this.portraitTagSelect('sov')
+  if (document.getElementById('3hportrait1').checked) {
+    this.portraitTagSelect('academy')
+  } else if (document.getElementById('3hportrait2').checked) {
+    this.portraitTagSelect('war')
+    library['monica'].portrait = 'hopes';
+  } else if (document.getElementById('3hportrait3').checked) {
+    this.portraitTagSelect('hopes')
+    library['cyril'].portrait = 'war';
+    library['byleth_f'].portrait = 'war';
+    library['byleth_m'].portrait = 'war';
   }
-  this.THfilter()
-  document.getElementById('tellius1').checked ? this.portraitFilter('_rd') : this.portraitFilter('_por')
+  if (document.getElementById('def').checked) {
+    this.defaultPortraits();
+  } else if (document.getElementById('fe6').checked) {
+    this.portraitTagSelect('fe6')
+  } else if (document.getElementById('fe7').checked) {
+    this.portraitTagSelect('fe7')
+  }
   for (let i = 0; i < filtersArr.length; i++) {
     if (document.getElementById(`filter${i}`).checked) {
       charlist = charlist.filter(element =>
@@ -193,4 +216,6 @@ function applyFilters() {
     }
     charlist = this.shuffle(charlist)
   }
+  this.removeDoubles()
+  charlist = [...new Set(charlist)];
 }
