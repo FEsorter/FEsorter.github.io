@@ -3354,9 +3354,8 @@ let library = {
       "Code of the Burger King Extra"
     ],
     "tags": [
-      "dog"
     ],
-    "portrait": "dog",
+    "portrait": "",
     "sex": "Male",
     "class": [],
     "hair": []
