@@ -29,7 +29,7 @@ function swap(key){
 
 function downloadTemplate(){
   var link = document.createElement('a');
-  link.download = `template.png`;
+  link.download = `${current}.png`;
   link.href = document.getElementById('mainImg').src
   link.id = 'template'
   document.body.appendChild(link);
