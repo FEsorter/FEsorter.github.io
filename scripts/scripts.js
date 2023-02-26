@@ -14,6 +14,30 @@ function shuffle(array) {
   return array;
 }
 
+let current = 'top25'
+
+function swap(key){
+  document.getElementById(`${current}Img`).src = `./templates/temp_buttons/${current}.png`
+
+  document.getElementById(`${key}Img`).src = `./templates/temp_buttons/${key}_sel.png`
+
+   document.getElementById(`mainImg`).src = `./templates/${key}.png`
+
+   current = key
+
+}
+
+function downloadTemplate(){
+  var link = document.createElement('a');
+  link.download = `template.png`;
+  link.href = document.getElementById('mainImg').src
+  link.id = 'template'
+  document.body.appendChild(link);
+link.click();
+document.body.removeChild(link);
+
+}
+
 function toggleCollapsible(id) {
   let el = document.getElementById(id);
   el.classList.toggle("active");
