@@ -7062,7 +7062,7 @@ let library = {
     ]
   },
   "fogato": {
-    "display": "Fogato",
+    "display": "Fogado",
     "displayTitle": "Engage",
     "origin": [
       "Engage"
