@@ -28,6 +28,33 @@ function resume() {
   }
   this.transformTable()
   charlist = JSON.parse(window.localStorage['charlist'])
+
+  document.getElementById('tellius1').checked ? this.portraitTagSelect('por') : this.portraitTagSelect('rd')
+  document.getElementById('wwings1').checked ? this.portraitTagSelect('fe1') : this.portraitTagSelect('sov')
+  if (document.getElementById('3hportrait1').checked) {
+    this.portraitTagSelect('academy')
+  } else if (document.getElementById('3hportrait2').checked) {
+    this.portraitTagSelect('war')
+    library['monica'].portrait = 'hopes';
+  } else if (document.getElementById('3hportrait3').checked) {
+    this.portraitTagSelect('hopes')
+    library['cyril'].portrait = 'war';
+    library['byleth_f'].portrait = 'war';
+    library['byleth_m'].portrait = 'war';
+  }
+  if (document.getElementById('def').checked) {
+    this.defaultPortraits();
+  } else if (document.getElementById('fe6').checked) {
+    this.portraitTagSelect('fe6')
+  } else if (document.getElementById('fe7').checked) {
+    this.portraitTagSelect('fe7')
+  }
+
+
+
+
+
+
   lstMember = JSON.parse(window.localStorage['lstMember'].slice(0));
   rec = JSON.parse(window.localStorage['rec'].slice(0));
   equal = JSON.parse(window.localStorage['equal'].slice(0));
