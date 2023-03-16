@@ -72,7 +72,7 @@ function startup() {
   document.getElementById('resultcontainer').style.display = 'none';
   this.selectAllRomhack()
   this.selectAllOther()
-  for (let i = 1; i < 25; i++) {
+  for (let i = 1; i < 27; i++) {
     document.getElementById(`dupeC${i}`).checked = false;
   }
 }
@@ -168,7 +168,7 @@ async function initialize() {
 }
 
 function removeDoubles() {
-  for (let i = 1; i < 25; i++) {
+  for (let i = 1; i < 27; i++) {
     if (!document.getElementById(`dupeC${i}`).checked) {
       continue;
     }
