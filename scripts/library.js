@@ -1,4 +1,97 @@
 let library = {
+
+  "zelestia": {
+    "display": "Zelestia",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [
+    ],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+
+  "madeline": {
+    "display": "Madeline",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [
+    ],
+    "hair": [
+      "Blonde"
+    ]
+  },
+
+
+  "gregory": {
+    "display": "Gregory",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": [
+    ],
+    "hair": [
+      "Green"
+    ]
+  },
+
+
+  "nel": {
+    "display": "Nel",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [
+    ],
+    "hair": [
+      "Black"
+    ]
+  },
+
+
+  "nil": {
+    "display": "Nil",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": [
+    ],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+
+
+
+
+
+
+
+
   "alta": {
     "display": "Alta",
     "displayTitle": "Shackled Power",

@@ -70,9 +70,15 @@ function startup() {
   document.getElementById('otherSelect_allExtra').checked = false;
   document.getElementById('topTen').style.display = 'none';
   document.getElementById('resultcontainer').style.display = 'none';
+  document.getElementById('optSelect_all').checked = false;
+    document.getElementById('optSelect_allExtra').checked = false;
+
+
   this.selectAllRomhack()
+  this.selectAllMainline()
   this.selectAllOther()
-  for (let i = 1; i < 27; i++) {
+  document.getElementById('option26').checked = true;
+  for (let i = 1; i < 30; i++) {
     document.getElementById(`dupeC${i}`).checked = false;
   }
 }
@@ -168,7 +174,7 @@ async function initialize() {
 }
 
 function removeDoubles() {
-  for (let i = 1; i < 27; i++) {
+  for (let i = 1; i < 30; i++) {
     if (!document.getElementById(`dupeC${i}`).checked) {
       continue;
     }
