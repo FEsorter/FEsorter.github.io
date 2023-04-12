@@ -1,5 +1,38 @@
 let library = {
 
+    "njordr": {
+    "display": "Njörðr",
+    "displayTitle": "Heroes",
+    "origin": [
+      "Heroes"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": ["Shapeshifters"],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+
+
+
+    "nerthuz": {
+    "display": "Nerþuz",
+    "displayTitle": "Heroes",
+    "origin": [
+      "Heroes"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": ["Shapeshifters"],
+    "hair": [
+      "Pink"
+    ]
+  },
+
   "zelestia": {
     "display": "Zelestia",
     "displayTitle": "Engage",
