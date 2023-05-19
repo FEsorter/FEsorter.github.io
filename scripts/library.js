@@ -16,6 +16,100 @@ let library = {
   },
 
 
+    "eve": {
+    "display": "Ève",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Blonde"
+    ]
+  },
+
+      "sombron": {
+    "display": "Sombron",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": ["Shapeshifters"],
+    "hair": [
+      "Purple"
+    ]
+  },
+
+      "seforia": {
+    "display": "Seforia",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Brown"
+    ]
+  },
+
+      "morion": {
+    "display": "Morion",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "Red / Orange"
+    ]
+  },
+
+      "hyacinth": {
+    "display": "Hyacinth",
+    "displayTitle": "Engage",
+    "origin": [
+      "Engage"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Male",
+    "class": [],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+      "kvasir": {
+    "display": "Kvasir",
+    "displayTitle": "Heroes",
+    "origin": [
+      "Heroes"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+      "Green", "Pink"
+    ]
+  },
+
+
+
+
+
 
 
     "nerthuz": {

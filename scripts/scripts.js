@@ -78,7 +78,7 @@ function startup() {
   this.selectAllMainline()
   this.selectAllOther()
   document.getElementById('option26').checked = true;
-  for (let i = 1; i < 30; i++) {
+  for (let i = 1; i < 33; i++) {
     document.getElementById(`dupeC${i}`).checked = false;
   }
 }
@@ -174,7 +174,7 @@ async function initialize() {
 }
 
 function removeDoubles() {
-  for (let i = 1; i < 30; i++) {
+  for (let i = 1; i < 33; i++) {
     if (!document.getElementById(`dupeC${i}`).checked) {
       continue;
     }
