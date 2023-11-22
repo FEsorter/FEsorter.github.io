@@ -1,6 +1,23 @@
 let library = {
 
-    "njordr": {
+
+  "ginnungagap": {
+    "display": "Ginnungagap",
+    "displayTitle": "Heroes",
+    "origin": [
+      "Heroes"
+    ],
+    "tags": [],
+    "portrait": "",
+    "sex": "Female",
+    "class": [],
+    "hair": [
+     
+    ]
+  },
+
+
+  "njordr": {
     "display": "Njörðr",
     "displayTitle": "Heroes",
     "origin": [
@@ -14,9 +31,7 @@ let library = {
       "White / Gray"
     ]
   },
-
-
-    "eve": {
+  "eve": {
     "display": "Ève",
     "displayTitle": "Engage",
     "origin": [
@@ -30,8 +45,7 @@ let library = {
       "Blonde"
     ]
   },
-
-      "sombron": {
+  "sombron": {
     "display": "Sombron",
     "displayTitle": "Engage",
     "origin": [
@@ -45,8 +59,7 @@ let library = {
       "Purple"
     ]
   },
-
-      "seforia": {
+  "seforia": {
     "display": "Seforia",
     "displayTitle": "Engage",
     "origin": [
@@ -60,8 +73,7 @@ let library = {
       "Brown"
     ]
   },
-
-      "morion": {
+  "morion": {
     "display": "Morion",
     "displayTitle": "Engage",
     "origin": [
@@ -75,8 +87,7 @@ let library = {
       "Red / Orange"
     ]
   },
-
-      "hyacinth": {
+  "hyacinth": {
     "display": "Hyacinth",
     "displayTitle": "Engage",
     "origin": [
@@ -90,8 +101,7 @@ let library = {
       "White / Gray"
     ]
   },
-
-      "kvasir": {
+  "kvasir": {
     "display": "Kvasir",
     "displayTitle": "Heroes",
     "origin": [
@@ -105,14 +115,7 @@ let library = {
       "Green", "Pink"
     ]
   },
-
-
-
-
-
-
-
-    "nerthuz": {
+  "nerthuz": {
     "display": "Nerþuz",
     "displayTitle": "Heroes",
     "origin": [
@@ -126,7 +129,6 @@ let library = {
       "Pink"
     ]
   },
-
   "zelestia": {
     "display": "Zelestia",
     "displayTitle": "Engage",
@@ -136,14 +138,11 @@ let library = {
     "tags": [],
     "portrait": "",
     "sex": "Female",
-    "class": [
-    ],
+    "class": [],
     "hair": [
       "White / Gray"
     ]
   },
-
-
   "madeline": {
     "display": "Madeline",
     "displayTitle": "Engage",
@@ -153,14 +152,11 @@ let library = {
     "tags": [],
     "portrait": "",
     "sex": "Female",
-    "class": [
-    ],
+    "class": [],
     "hair": [
       "Blonde"
     ]
   },
-
-
   "gregory": {
     "display": "Gregory",
     "displayTitle": "Engage",
@@ -170,14 +166,11 @@ let library = {
     "tags": [],
     "portrait": "",
     "sex": "Male",
-    "class": [
-    ],
+    "class": [],
     "hair": [
       "Green"
     ]
   },
-
-
   "nel": {
     "display": "Nel",
     "displayTitle": "Engage",
@@ -187,14 +180,11 @@ let library = {
     "tags": [],
     "portrait": "",
     "sex": "Female",
-    "class": [
-    ],
+    "class": [],
     "hair": [
       "Black"
     ]
   },
-
-
   "nil": {
     "display": "Nil",
     "displayTitle": "Engage",
@@ -204,21 +194,11 @@ let library = {
     "tags": [],
     "portrait": "",
     "sex": "Male",
-    "class": [
-    ],
+    "class": [],
     "hair": [
       "White / Gray"
     ]
   },
-
-
-
-
-
-
-
-
-
   "alta": {
     "display": "Alta",
     "displayTitle": "Shackled Power",
@@ -3573,8 +3553,7 @@ let library = {
     "origin": [
       "Code of the Burger King Extra"
     ],
-    "tags": [
-    ],
+    "tags": [],
     "portrait": "",
     "sex": "Male",
     "class": [],
@@ -7505,6 +7484,25 @@ let library = {
   },
   "freyja_feh": {
     "display": "Freyja",
+    "displayTitle": "Heroes",
+    "origin": [
+      "Heroes"
+    ],
+    "tags": [
+      ""
+    ],
+    "portrait": "",
+    "sex": "Female",
+    "class": [
+      "Shapeshifters"
+    ],
+    "hair": [
+      "White / Gray"
+    ]
+  },
+
+  "eitr": {
+    "display": "Eitr",
     "displayTitle": "Heroes",
     "origin": [
       "Heroes"
