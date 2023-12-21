@@ -37,8 +37,6 @@ const romhacksArr = [
   "Vision Quest Extra",
   "Four Kings",
   "Four Kings Extra",
-  "Code of the Burger King",
-  "Code of the Burger King Extra",
   "Dark Lord and the Maiden of Light",
   "Dark Lord and the Maiden of Light Extra",
   "Shackled Power",

@@ -1217,20 +1217,7 @@ let library = {
       "Blonde"
     ]
   },
-  "adachy": {
-    "display": "Adachy",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Black"
-    ]
-  },
+
   "adda": {
     "display": "Adda",
     "displayTitle": "Dark Lord and the Maiden of Light",
@@ -2597,20 +2584,7 @@ let library = {
       "Brown"
     ]
   },
-  "azel_cotbk": {
-    "display": "Azel (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "azelle": {
     "display": "Azelle",
     "displayTitle": "Genealogy of the Holy War",
@@ -2965,24 +2939,7 @@ let library = {
       "Purple"
     ]
   },
-  "bernie_cotbk": {
-    "display": "Bernie (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [
-      "cotbk"
-    ],
-    "portrait": "cotbk",
-    "sex": "Female",
-    "class": [
-      "Healers"
-    ],
-    "hair": [
-      "Purple"
-    ]
-  },
+  
   "bertram": {
     "display": "Bertram",
     "displayTitle": "Path of Radiance / Radiant Dawn",
@@ -3013,51 +2970,8 @@ let library = {
       "Blue"
     ]
   },
-  "bigle": {
-    "display": "Bigle",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
-  "birdie": {
-    "display": "Birdie",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [
-      "Archers"
-    ],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
-  "bk_cotbk": {
-    "display": "Black Knight (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [
-      "cotbk"
-    ],
-    "portrait": "cotbk",
-    "sex": "Male",
-    "class": [
-      "Lords",
-      "Armor Knights"
-    ],
-    "hair": []
-  },
+  
+
   "black_knight": {
     "display": "Black Knight",
     "displayTitle": "Path of Radiance / Radiant Dawn",
@@ -3221,22 +3135,7 @@ let library = {
       "Green"
     ]
   },
-  "bors_cotbk": {
-    "display": "Bors (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Armor Knights"
-    ],
-    "hair": [
-      "Green"
-    ]
-  },
+  
   "bortz": {
     "display": "Bortz",
     "displayTitle": "Dark Lord and the Maiden of Light",
@@ -3461,20 +3360,7 @@ let library = {
       "Black"
     ]
   },
-  "brown": {
-    "display": "Brown",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Brown"
-    ]
-  },
+
   "brunnya": {
     "display": "Brunnya",
     "displayTitle": "Binding Blade",
@@ -3547,18 +3433,7 @@ let library = {
       "Blonde"
     ]
   },
-  "butter_dog": {
-    "display": "Butter Dog",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+
   "byleth_f": {
     "display": "Byleth (F)",
     "displayTitle": "Three Houses / Three Hopes",
@@ -4283,22 +4158,7 @@ let library = {
       "Blonde"
     ]
   },
-  "chungis": {
-    "display": "Chungis",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Armor Knights"
-    ],
-    "hair": [
-      "White / Gray"
-    ]
-  },
+  
   "cia": {
     "display": "Cia",
     "displayTitle": "The Last Promise",
@@ -5030,22 +4890,7 @@ let library = {
       "Black"
     ]
   },
-  "dalvin_cotbk": {
-    "display": "Dalvin (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "Black"
-    ]
-  },
+  
   "danann": {
     "display": "Danann",
     "displayTitle": "Genealogy of the Holy War",
@@ -5302,20 +5147,7 @@ let library = {
       "Purple"
     ]
   },
-  "deke_cotbk": {
-    "display": "Deke (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Green"
-    ]
-  },
+ 
   "delthea": {
     "display": "Delthea",
     "displayTitle": "Shadows of Valentia",
@@ -5330,22 +5162,7 @@ let library = {
       "Brown"
     ]
   },
-  "demijagen": {
-    "display": "Demijagen",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Wyvern Riders"
-    ],
-    "hair": [
-      "White / Gray"
-    ]
-  },
+ 
   "denning": {
     "display": "Denning",
     "displayTitle": "Blazing Blade",
@@ -5687,20 +5504,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "dorshua": {
-    "display": "Dorshua",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+ 
   "douglas": {
     "display": "Douglas",
     "displayTitle": "Binding Blade",
@@ -7102,20 +6906,7 @@ let library = {
       "Pink"
     ]
   },
-  "fiona_cotbk": {
-    "display": "Fiona (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [],
-    "hair": [
-      "Pink"
-    ]
-  },
+ 
   "fiora": {
     "display": "Fiora",
     "displayTitle": "Blazing Blade",
@@ -7607,20 +7398,7 @@ let library = {
       "Black"
     ]
   },
-  "gabagool": {
-    "display": "Gabagool",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Brown"
-    ]
-  },
+ 
   "gaius": {
     "display": "Gaius",
     "displayTitle": "Awakening",
@@ -7911,22 +7689,7 @@ let library = {
       "Pink"
     ]
   },
-  "generic_ilian": {
-    "display": "Generic Ilian",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [
-      "Pegasus Knights"
-    ],
-    "hair": [
-      "Blue"
-    ]
-  },
+ 
   "genny": {
     "display": "Genny",
     "displayTitle": "Shadows of Valentia",
@@ -8281,22 +8044,7 @@ let library = {
     ],
     "hair": []
   },
-  "grimace": {
-    "display": "Grimace",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Armor Knights"
-    ],
-    "hair": [
-      "Purple"
-    ]
-  },
+ 
   "griss": {
     "display": "Griss",
     "displayTitle": "Engage",
@@ -8557,18 +8305,7 @@ let library = {
       "Black"
     ]
   },
-  "hamburglar": {
-    "display": "Hamburglar",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+ 
   "hana": {
     "display": "Hana",
     "displayTitle": "Fates",
@@ -9224,18 +8961,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "honse": {
-    "display": "Honse",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+  
   "horace": {
     "display": "Horace",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -9370,20 +9096,7 @@ let library = {
       "Purple"
     ]
   },
-  "hugh_cotbk": {
-    "display": "Hugh (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Purple"
-    ]
-  },
+ 
   "hughette": {
     "display": "Hughette",
     "displayTitle": "Triangle Strategy",
@@ -10342,22 +10055,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "joshua_cotbk": {
-    "display": "Joshua (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+ 
   "jubelo": {
     "display": "Jubelo",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -10472,20 +10170,7 @@ let library = {
       "Brown"
     ]
   },
-  "kaga": {
-    "display": "Kaga",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Wyvern Riders"
-    ],
-    "hair": []
-  },
+
   "kagero": {
     "display": "Kagero",
     "displayTitle": "Fates",
@@ -10775,20 +10460,7 @@ let library = {
       "White / Gray"
     ]
   },
-  "kempf_cotbk": {
-    "display": "Kempf (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "White / Gray"
-    ]
-  },
+ 
   "kent": {
     "display": "Kent",
     "displayTitle": "Blazing Blade",
@@ -12870,22 +12542,7 @@ let library = {
       "Green"
     ]
   },
-  "lynhardt_cotbk": {
-    "display": "Lynhardt (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Refreshers"
-    ],
-    "hair": [
-      "Green"
-    ]
-  },
+  
   "lyon": {
     "display": "Lyon",
     "displayTitle": "Sacred Stones",
@@ -13182,7 +12839,8 @@ let library = {
     "display": "Marcus",
     "displayTitle": "Blazing Blade / Binding Blade",
     "origin": [
-      "Blazing Blade"
+      "Blazing Blade",
+      "Binding Blade"
     ],
     "tags": [
       "fe7",
@@ -13397,20 +13055,7 @@ let library = {
       "Brown"
     ]
   },
-  "marty_cotbk": {
-    "display": "Marty (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Brown"
-    ]
-  },
+  
   "marvin": {
     "display": "Marvin",
     "displayTitle": "Four Kings",
@@ -13481,20 +13126,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "matthis_cotbk": {
-    "display": "Matthis (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "mauvier": {
     "display": "Mauvier",
     "displayTitle": "Engage",
@@ -15017,18 +14649,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "not_kelik": {
-    "display": "Not Kelik",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+  
   "nott": {
     "display": "Nótt",
     "displayTitle": "Heroes",
@@ -15129,18 +14750,7 @@ let library = {
       "Black"
     ]
   },
-  "o_neill": {
-    "display": "O'Neill",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+  
   "obermueller": {
     "display": "Obermueller",
     "displayTitle": "Vision Quest",
@@ -15576,22 +15186,7 @@ let library = {
       "Black"
     ]
   },
-  "papaya": {
-    "display": "Papaya",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [
-      "Archers"
-    ],
-    "hair": [
-      "Green"
-    ]
-  },
+
   "papilio": {
     "display": "Papilio",
     "displayTitle": "Genealogy of the Holy War",
@@ -15778,20 +15373,7 @@ let library = {
       "Blue"
     ]
   },
-  "perne_cotbk": {
-    "display": "Perne (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Blue"
-    ]
-  },
+ 
   "petra": {
     "display": "Petra",
     "displayTitle": "Three Houses / Three Hopes",
@@ -15954,22 +15536,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "priscilla_cotbk": {
-    "display": "Priscilla (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [
-      "Healers"
-    ],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "python": {
     "display": "Python",
     "displayTitle": "Shadows of Valentia",
@@ -16028,22 +15595,7 @@ let library = {
       "Green"
     ]
   },
-  "rad_quetz": {
-    "display": "Rad Quetz",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "radd": {
     "display": "Radd",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -16314,22 +15866,7 @@ let library = {
       "Green"
     ]
   },
-  "rebecca_cotbk": {
-    "display": "Rebecca (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Female",
-    "class": [
-      "Archers"
-    ],
-    "hair": [
-      "Green"
-    ]
-  },
+ 
   "regina": {
     "display": "Regina",
     "displayTitle": "Four Kings",
@@ -16612,20 +16149,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "ricardo_cotbk": {
-    "display": "Ricardo (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Blue"
-    ]
-  },
+ 
   "rickard": {
     "display": "Rickard",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -16654,20 +16178,7 @@ let library = {
       "Brown"
     ]
   },
-  "riddell_cotbk": {
-    "display": "Riddell (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Brown"
-    ]
-  },
+  
   "riev": {
     "display": "Riev",
     "displayTitle": "Sacred Stones",
@@ -16927,20 +16438,7 @@ let library = {
       "Blonde"
     ]
   },
-  "ronald": {
-    "display": "Ronald",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "ronaldo": {
     "display": "Ronaldo",
     "displayTitle": "Dark Lord and the Maiden of Light",
@@ -17225,18 +16723,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "sail": {
-    "display": "Sail",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+ 
   "sain": {
     "display": "Sain",
     "displayTitle": "Blazing Blade",
@@ -17309,20 +16796,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "salem_cotbk": {
-    "display": "Salem (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Red / Orange"
-    ]
-  },
+  
   "sally": {
     "display": "Sally",
     "displayTitle": "Four Kings",
@@ -17351,22 +16825,7 @@ let library = {
       "Blue"
     ]
   },
-  "samto_cotbk": {
-    "display": "Samto (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "Brown"
-    ]
-  },
+  
   "samuel": {
     "display": "Samuel",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -17747,22 +17206,7 @@ let library = {
       "Black"
     ]
   },
-  "sephiran_cotbk": {
-    "display": "Sephiran (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Wyvern Riders"
-    ],
-    "hair": [
-      "Black"
-    ]
-  },
+  
   "sephiran": {
     "display": "Sephiran",
     "displayTitle": "Path of Radiance / Radiant Dawn",
@@ -17780,22 +17224,7 @@ let library = {
       "Black"
     ]
   },
-  "sephiroth": {
-    "display": "Sephiroth",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "White / Gray"
-    ]
-  },
+ 
   "serenoa": {
     "display": "Serenoa",
     "displayTitle": "Triangle Strategy",
@@ -18052,23 +17481,7 @@ let library = {
       "Blonde"
     ]
   },
-  "sharlow_cotbk": {
-    "display": "Sharlow (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Healers",
-      "Armor Knights"
-    ],
-    "hair": [
-      "Blue"
-    ]
-  },
+
   "shaun": {
     "display": "Shaun",
     "displayTitle": "Four Kings",
@@ -18561,18 +17974,7 @@ let library = {
       "Blonde"
     ]
   },
-  "soldier": {
-    "display": "Soldier",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+ 
   "soleil": {
     "display": "Soleil",
     "displayTitle": "Fates",
@@ -18750,22 +18152,7 @@ let library = {
       "Black"
     ]
   },
-  "st4f_bot": {
-    "display": "ST4F-B0T",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Healers"
-    ],
-    "hair": [
-      "Bald"
-    ]
-  },
+
   "stahl": {
     "display": "Stahl",
     "displayTitle": "Awakening",
@@ -18861,20 +18248,7 @@ let library = {
       "Red / Orange"
     ]
   },
-  "subject_35": {
-    "display": "Subject 35",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Archers"
-    ],
-    "hair": []
-  },
+  
   "sue": {
     "display": "Sue",
     "displayTitle": "Binding Blade",
@@ -19381,20 +18755,7 @@ let library = {
       "Black"
     ]
   },
-  "the_king": {
-    "display": "The King",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": [
-      "Brown"
-    ]
-  },
+  
   "thea": {
     "display": "Thea",
     "displayTitle": "Binding Blade",
@@ -19682,22 +19043,7 @@ let library = {
       "Blonde"
     ]
   },
-  "tomas_cotbk": {
-    "display": "Tomas (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Archers"
-    ],
-    "hair": [
-      "Green"
-    ]
-  },
+ 
   "tomas_fe1": {
     "display": "Tomas (SD/NM)",
     "displayTitle": "Shadow Dragon / New Mystery",
@@ -19845,22 +19191,7 @@ let library = {
       "White / Gray"
     ]
   },
-  "trude_cotbk": {
-    "display": "Trude (CotBK)",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [
-      "Myrmidons"
-    ],
-    "hair": [
-      "White / Gray"
-    ]
-  },
+ 
   "tsubasa": {
     "display": "Tsubasa",
     "displayTitle": "TMS#FE",
@@ -20442,18 +19773,7 @@ let library = {
       "Blue"
     ]
   },
-  "wario": {
-    "display": "Wario",
-    "displayTitle": "Code of the Burger King",
-    "origin": [
-      "Code of the Burger King Extra"
-    ],
-    "tags": [],
-    "portrait": "",
-    "sex": "Male",
-    "class": [],
-    "hair": []
-  },
+  
   "warren": {
     "display": "Warren",
     "displayTitle": "Shadow Dragon / New Mystery",
